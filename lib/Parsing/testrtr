@@ -1,0 +1,1395 @@
+!RANCID-CONTENT-TYPE: cisco
+!
+!Chassis type: WS-C3550-24 - a 3550 switch
+!CPU: PowerPC
+!IOS: IOS
+!
+!Memory: main 65526K/8192K
+!Serial Number: CHK0611W193
+!Model revision number: B0
+!Model number: WS-C3550-24-EMI
+!Motherboard assembly number: 73-5700-08
+!Motherboard serial number: CAT06110AAY
+!Motherboard revision number: A0
+!Power supply part number: 34-0966-02
+!Power supply serial number: LIT060501CF
+!
+!Processor ID: CHK0611W193
+!
+!Image: Software: C3550-IPSERVICESK9-M, 12.2(35)SE3, RELEASE SOFTWARE (fc1)
+!Image: Compiled: Fri 16-Mar-07 00:43 by antonino
+!Image: flash:/c3550-ipservicesk9-mz.122-35.SE3.bin
+!
+!
+!SSH: Version 2.0
+!
+!
+!Power: RPS is NOT PRESENT
+!
+!
+!
+!BootFlash: BOOT path-list:       
+!BootFlash: Config file:          flash:/config.text
+!BootFlash: Private Config file:  flash:/private-config.text
+!BootFlash: Enable Break:         no
+!BootFlash: Manual Boot:          no
+!BootFlash: HELPER path-list:     
+!BootFlash: NVRAM/Config file
+!BootFlash:       buffer size:    393216
+!
+!
+!Flash: flash: Directory of flash:/
+!Flash: flash:     2  -rwx     7457899   Mar 1 1993 00:18:42 +00:00  c3550-ipservicesk9-mz.122-35.SE3.bin
+!Flash: flash:     3  -rwx       35130   Mar 1 1993 00:19:48 +00:00  na01.b001157-0.jfk02-new-config.txt
+!Flash: flash:     4  -rwx        3600  Jun 18 2013 02:56:15 +00:00  private-config.text
+!Flash: flash:     5  -rwx         616   Mar 1 1993 00:00:43 +00:00  vlan.dat
+!Flash: flash:     6  -rwx          16   Mar 1 1993 00:04:46 +00:00  env_vars
+!Flash: flash:     7  -rwx           0   Mar 1 1993 00:04:46 +00:00  system_env_vars
+!Flash: flash:     8  -rwx       40959  Jun 18 2013 02:56:15 +00:00  config.text
+!Flash: flash:    10  -rwx        1048  Jun 18 2013 02:56:15 +00:00  multiple-fs
+!Flash: flash: 15998976 bytes total (8455680 bytes free)
+!
+!Flash: zflash: Directory of zflash:/
+!Flash: zflash:     2  -rwx     7457899   Mar 1 1993 00:18:42 +00:00  c3550-ipservicesk9-mz.122-35.SE3.bin
+!Flash: zflash:     3  -rwx       35130   Mar 1 1993 00:19:48 +00:00  na01.b001157-0.jfk02-new-config.txt
+!Flash: zflash:     4  -rwx        3600  Jun 18 2013 02:56:15 +00:00  private-config.text
+!Flash: zflash:     5  -rwx         616   Mar 1 1993 00:00:43 +00:00  vlan.dat
+!Flash: zflash:     6  -rwx          16   Mar 1 1993 00:04:46 +00:00  env_vars
+!Flash: zflash:     7  -rwx           0   Mar 1 1993 00:04:46 +00:00  system_env_vars
+!Flash: zflash:     8  -rwx       40959  Jun 18 2013 02:56:15 +00:00  config.text
+!Flash: zflash:    10  -rwx        1048  Jun 18 2013 02:56:15 +00:00  multiple-fs
+!Flash: zflash: 15998976 bytes total (8455680 bytes free)
+!
+!Flash: nvram: Directory of nvram:/
+!Flash: nvram:   343  -rw-       40959                      startup-config
+!Flash: nvram:   344  ----        3600                      private-config
+!Flash: nvram:     1  ----          12                      persistent-data
+!Flash: nvram: 393216 bytes total (347581 bytes free)
+!
+!MTU: 1546
+!
+!SDM Template: default
+!
+!NAME: "na01.b001157-0.jfk02",  DESCR: "Cisco Catalyst 3550 24 10/100 baseT ports + 2 Gig uplinks fixed configuration Layer 2/3 Ethernet Switch"
+!PID: WS-C3550-24-EMI
+!VID: B0
+!SN: CHK0611W193
+!NAME: "FastEthernet0/1",       DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/2",       DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/3",       DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/4",       DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/5",       DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/6",       DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/7",       DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/8",       DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/9",       DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/10",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/11",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/12",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/13",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/14",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/15",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/16",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/17",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/18",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/19",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/20",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/21",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/22",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/23",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "FastEthernet0/24",      DESCR: "10/100BaseTXFast Ethernet"
+!NAME: "GigabitEthernet0/1",    DESCR: "Gigabit Ethernet"
+!NAME: "GigabitEthernet0/1",    DESCR: "shortwave fibre gigabit ethernet port adapter"
+!PID: GBIC_SX           , VID: 00 00 8218 4630, SN: AGS08040BJT     
+!NAME: "GigabitEthernet0/2",    DESCR: "Gigabit Ethernet"
+!NAME: "GigabitEthernet0/2",    DESCR: "shortwave fibre gigabit ethernet port adapter"
+!PID: GBIC_SX           , VID: 1CE 5868 13F 00, SN: A53408759       
+!
+!INV  NAME: "na01.b001157-0.jfk02"
+!INV DESCR: "Cisco Catalyst 3550 24 10/100 baseT ports + 2 Gig uplinks fixed configuration Layer 2/3 Ethernet Switch"
+!INV   PID: WS-C3550-24-EMI   
+!INV   VID: B0 
+!INV    SN: CHK0611W193
+!
+!INV  NAME: "GigabitEthernet0/1"
+!INV DESCR: "shortwave fibre gigabit ethernet port adapter"
+!INV   PID: GBIC_SX           
+!INV   VID: 00 00 8218 4630
+!INV    SN: AGS08040BJT     
+!
+!INV  NAME: "GigabitEthernet0/2"
+!INV DESCR: "shortwave fibre gigabit ethernet port adapter"
+!INV   PID: GBIC_SX           
+!INV   VID: 1CE 5868 13F 00
+!INV    SN: A53408759       
+!
+!
+!Post: Stored system POST messages:
+!Post: POST: CPU Buffer Tests : Begin
+!Post: POST: CPU Buffer Tests : End, Status Passed
+!Post: POST: CPU Interface Tests : Begin
+!Post: POST: CPU Interface Tests : End, Status Passed
+!Post: POST: Switch Core Tests : Begin
+!Post: POST: Switch Core Tests : End, Status Passed
+!Post: POST: CPU Interface 2nd Stage Tests : Begin
+!Post: POST: CPU Interface 2nd Stage Tests : End, Status Passed
+!Post: POST: CAM Subsystem Tests : Begin
+!Post: POST: CAM Subsystem Tests : End, Status Passed
+!Post: POST: Ethernet Controller Tests : Begin
+!Post: POST: Ethernet Controller Tests : End, Status Passed
+!Post: POST: Loopback Tests : Begin
+!Post: POST: Loopback Tests : End, Status Passed
+!
+!VTP: VTP Version                     : 2
+!VTP: Configuration Revision          : 0
+!VTP: Maximum VLANs supported locally : 1005
+!VTP: Number of existing VLANs        : 6
+!VTP: VTP Operating Mode              : Transparent
+!VTP: VTP Domain Name                 : 
+!VTP: VTP Pruning Mode                : Disabled
+!VTP: VTP V2 Mode                     : Disabled
+!VTP: VTP Traps Generation            : Disabled
+!VTP: MD5 digest                      : 0x4E 0x46 0x1D 0x69 0xC8 0x6F 0x68 0xAE 
+!
+!VLAN: VLAN Name                             Status    Ports
+!VLAN: ---- -------------------------------- --------- -------------------------------
+!VLAN: 1    default                          active    
+!VLAN: 936  VLAN0936                         active    Fa0/6
+!VLAN: 1002 fddi-default                     act/unsup 
+!VLAN: 1003 token-ring-default               act/unsup 
+!VLAN: 1004 fddinet-default                  act/unsup 
+!VLAN: 1005 trnet-default                    act/unsup 
+!VLAN: 1086 VLAN1086                         active    
+!VLAN: 1451 VLAN1451                         active    
+!VLAN: 1452 VLAN1452                         active    
+!VLAN: 2032 VLAN2032                         active    
+!VLAN: 2187 VLAN2187                         active    Fa0/18
+!VLAN: 3537 VLAN3537                         active    
+!VLAN: 3837 VLAN3837                         active    
+!VLAN: VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+!VLAN: ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+!VLAN: 1    enet  100001     1500  -      -      -        -    -        0      0   
+!VLAN: 936  enet  100936     1500  -      -      -        -    -        0      0   
+!VLAN: 1002 fddi  101002     1500  -      -      -        -    -        0      0   
+!VLAN: 1003 tr    101003     1500  -      -      -        -    -        0      0   
+!VLAN: 1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+!VLAN: 1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+!VLAN: 1086 enet  101086     1500  -      -      -        -    -        0      0   
+!VLAN: 1451 enet  101451     1500  -      -      -        -    -        0      0   
+!VLAN: 1452 enet  101452     1500  -      -      -        -    -        0      0   
+!VLAN: 2032 enet  102032     1500  -      -      -        -    -        0      0   
+!VLAN: 2187 enet  102187     1500  -      -      -        -    -        0      0   
+!VLAN: 3537 enet  103537     1500  -      -      -        -    -        0      0   
+!VLAN: 3837 enet  103837     1500  -      -      -        -    -        0      0   
+!VLAN: Remote SPAN VLANs
+!VLAN: ------------------------------------------------------------------------------
+!VLAN: Primary Secondary Type              Ports
+!VLAN: ------- --------- ----------------- ------------------------------------------
+!
+!STP: Switch is in rapid-pvst mode
+!STP: Root bridge for: VLAN0001, VLAN1086, VLAN1451-VLAN1452, VLAN2032, VLAN3537
+!STP:   VLAN3837
+!STP: Extended system ID           is enabled
+!STP: Portfast Default             is disabled
+!STP: PortFast BPDU Guard Default  is disabled
+!STP: Portfast BPDU Filter Default is disabled
+!STP: Loopguard Default            is disabled
+!STP: EtherChannel misconfig guard is enabled
+!STP: UplinkFast                   is disabled
+!STP: BackboneFast                 is disabled
+!STP: Configured Pathcost method used is short
+!
+!INT: Vlan1                        admin-down  down        1546   -     -      -       -
+!INT: Vlan3537                     up          up          1546   -     -      -       -
+!INT: Vlan3837                     up          up          1546   -     -      -       -
+!INT: FastEthernet0/1              up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/2              up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/3              up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/4              up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/5              up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/6              up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/7              up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/8              up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/9              up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/10             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/11             admin-down  down        1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/12             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/13             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/14             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/15             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/16             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/17             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/18             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/19             down        down        1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/20             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/21             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/22             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/23             up          up          1546   Full  100    -       10/100BaseTX
+!INT: FastEthernet0/24             up          up          1546   Full  100    -       10/100BaseTX
+!INT: GigabitEthernet0/1           up          up          1546   Full  1000   force   1000BaseSX
+!INT: GigabitEthernet0/2           up          up          1546   Full  1000   force   1000BaseSX
+!INT: Loopback0                    up          up          1514   -     -      -       -
+!
+!INT-IPMTU: Vlan3537                     1500 
+!INT-IPMTU: Vlan3837                     1500 
+!INT-IPMTU: FastEthernet0/1              1500 
+!INT-IPMTU: FastEthernet0/2              1500 
+!INT-IPMTU: FastEthernet0/3              1500 
+!INT-IPMTU: FastEthernet0/4              1500 
+!INT-IPMTU: FastEthernet0/5              1500 
+!INT-IPMTU: FastEthernet0/7              1500 
+!INT-IPMTU: FastEthernet0/8              1500 
+!INT-IPMTU: FastEthernet0/9              1500 
+!INT-IPMTU: FastEthernet0/10             1500 
+!INT-IPMTU: FastEthernet0/11             1500 
+!INT-IPMTU: FastEthernet0/12             1500 
+!INT-IPMTU: FastEthernet0/13             1500 
+!INT-IPMTU: FastEthernet0/14             1500 
+!INT-IPMTU: FastEthernet0/16             1500 
+!INT-IPMTU: FastEthernet0/17             1500 
+!INT-IPMTU: FastEthernet0/19             1500 
+!INT-IPMTU: FastEthernet0/20             1500 
+!INT-IPMTU: FastEthernet0/21             1500 
+!INT-IPMTU: FastEthernet0/22             1500 
+!INT-IPMTU: FastEthernet0/23             1500 
+!INT-IPMTU: FastEthernet0/24             1500 
+!INT-IPMTU: Loopback0                    1514 
+!
+!
+config-register 0x10F
+version 12.2
+service nagle
+no service pad
+service tcp-keepalives-in
+service tcp-keepalives-out
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname na01.b001157-0.jfk02
+!
+logging buffered 16384 debugging
+logging console informational
+enable secret 5 $1$yAPY$Vp2MSkYZlCNFIqEikcNSA0
+enable password 7 0709724A1F0F4903021F
+!
+username broken password 7 060506324F41
+aaa new-model
+aaa authentication username-prompt NO_TAC_Username:
+aaa authentication login default group tacacs+ local
+aaa authentication enable default group tacacs+ enable
+aaa authorization config-commands
+aaa authorization exec default group tacacs+ if-authenticated 
+aaa authorization commands 15 default group tacacs+ local if-authenticated 
+aaa accounting exec default start-stop group tacacs+
+aaa accounting commands 1 default start-stop group tacacs+
+aaa accounting commands 15 default start-stop group tacacs+
+!
+aaa session-id common
+no errdisable detect cause pagp-flap
+no errdisable detect cause dtp-flap
+no errdisable detect cause link-flap
+no errdisable detect cause l2ptguard
+no errdisable detect cause gbic-invalid
+no errdisable detect cause loopback
+errdisable recovery cause udld
+mls qos aggregate-policer 1-22101656-2 2100000 50000 exceed-action drop
+mls qos aggregate-policer 1-22101656 2100000 50000 exceed-action drop
+mls qos
+udld aggressive
+
+ip subnet-zero
+ip routing
+ip domain-list atlas.cogentco.com
+ip domain-list hades.cogentco.com
+ip domain-list sys.cogentco.com
+ip domain-list dns.cogentco.com
+ip domain-list ip.cogentco.com
+ip domain-list cogentco.com
+ip domain-list .
+ip domain-name atlas.cogentco.com
+ip name-server 66.28.0.45
+ip name-server 66.28.0.61
+!
+ip ssh version 2
+no ip igmp snooping
+vtp mode transparent
+!
+no file verify auto
+!
+spanning-tree mode rapid-pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+vlan 936,1086,1451-1452,2032,2187,3537,3837 
+!
+class-map match-all IP-traffic
+  description Match everything inbound
+  match access-group 5
+class-map match-all Egress-traffic
+  description Egress only matches DSCP
+  match ip dscp default 
+!
+policy-map ratelimitout-1-22101656
+ description Rate-Limit 1-22101656 Egress
+  class Egress-traffic
+    police aggregate 1-22101656
+policy-map ratelimitin-1-22101656
+ description Rate-Limiting 1-22101656 Ingress
+  class IP-traffic
+    police aggregate 1-22101656-2
+!
+interface Null0
+ no ip unreachables
+!
+interface Loopback0
+ description MGNT
+ ip address 66.250.2.240 255.255.255.255
+ no ip redirects
+ no ip proxy-arp
+ ip route-cache same-interface
+!
+interface FastEthernet0/1
+ description CUST-R FE ^Brean Murray, Carret & Co LLC^ ID:1-97293068
+ no switchport
+ ip address 38.112.1.249 255.255.255.252
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/2
+ description CUST-R FE ^National Aviation Company of India Limited DBA Air India^ ID:1-9B3EH
+ no switchport
+ ip address 38.104.68.165 255.255.255.252
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/3
+ description CUST-R FE ^Sotheby's Institute of Art^ ID:1-50145146
+ no switchport
+ ip address 38.104.203.69 255.255.255.252
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/4
+ description CUST-R FE ^Carter Ledyard & Milburn^ ID:1-111648802
+ no switchport
+ ip address 38.117.170.17 255.255.255.240
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ load-interval 30
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/5
+ description CUST-R FE ^William T Grant Foundation^ ID:QF-GS
+ no switchport
+ ip address 38.112.11.189 255.255.255.252
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/6
+ description CUST-D FE ^Smart Choice Communications^ ID:1-103728938
+ switchport access vlan 936
+ switchport mode access
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ l2protocol-tunnel cdp
+ l2protocol-tunnel stp
+ l2protocol-tunnel vtp
+ no cdp enable
+ spanning-tree portfast
+ spanning-tree bpdufilter enable
+!
+interface FastEthernet0/7
+ description CUST-R FE ^Rochdale Investment Management^ ID:1-3HMNB
+ no switchport
+ ip address 38.112.28.65 255.255.255.252
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/8
+ description CUST-R FE ^Quad Partners^ ID:1-49618882
+ no switchport
+ ip address 38.121.134.33 255.255.255.248
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/9
+ description CUST-R FE ^Global Precision Research LLC^ ID:1-113109553
+ no switchport
+ ip address 38.88.5.185 255.255.255.248
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/10
+ description CUST-R FE ^Real Estate Board of New York^ ID:1-AASBY
+ no switchport
+ ip address 38.96.145.97 255.255.255.224
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ load-interval 30
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/11
+ description CUST-R FE CAP:2M ^New Providence Asset Management^ ID:1-22101656 TIK:5384539
+ no switchport
+ ip address 38.105.191.201 255.255.255.248
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ shutdown
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+ service-policy input ratelimitin-1-22101656
+ service-policy output ratelimitout-1-22101656
+!
+interface FastEthernet0/12
+ description CUST-R FE ^The Roosevelt Institute^ ID:1-81832464
+ no switchport
+ ip address 38.108.251.161 255.255.255.248
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/13
+ description CUST-R FE ^Miller & Wrubel PC^ ID:1-29153496
+ no switchport
+ ip address 38.98.111.161 255.255.255.240
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ load-interval 30
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/14
+ description CUST-R FE ^Archer Capital Management^ ID:1-5RV36
+ no switchport
+ ip address 38.98.102.233 255.255.255.248
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/15
+ description CUST-D FE ^IP Netzone Communications Inc^ ID:1-61011596
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 1451,1452,2032
+ switchport mode trunk
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+ spanning-tree portfast trunk
+ spanning-tree bpdufilter enable
+!
+interface FastEthernet0/16
+ description CUST-R FE ^OcenaBridge Partners^ ID:1-101362350
+ no switchport
+ ip address 38.122.240.133 255.255.255.252
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/17
+ description CUST-R FE ^Pearl Meyer & Partners, LLC^ ID:1-92617514
+ no switchport
+ ip address 38.122.241.105 255.255.255.248
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/18
+ description CUST-D FE ^Brean Murray, Carret & Co. LLC^ ID:1-100598359
+ switchport access vlan 2187
+ switchport mode dot1q-tunnel
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ l2protocol-tunnel cdp
+ l2protocol-tunnel stp
+ l2protocol-tunnel vtp
+ no cdp enable
+ spanning-tree portfast
+ spanning-tree bpdufilter enable
+!
+interface FastEthernet0/19
+ description PROV CUST-D FE ^Wholesale Bandwidth Solutions^ ID:1-B6NZO
+ no switchport
+ ip address 172.28.29.33 255.255.255.252
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+!
+interface FastEthernet0/20
+ description CUST-R FE ^Lagrange Capital Partners^ ID:1-AYFTM
+ no switchport
+ ip address 38.105.141.153 255.255.255.248
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/21
+ description CUST-R FE ^Arjent LLC^ ID:1-116716840
+ no switchport
+ ip address 38.102.196.173 255.255.255.252 secondary
+ ip address 38.98.125.73 255.255.255.248
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/22
+ description CUST-R FE ^Fabiani, Cohen & Hall, LLP^ ID:1-105229705
+ no switchport
+ ip address 38.108.198.33 255.255.255.240
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/23
+ description CUST-R FE ^Taub & Posman Associates, LLC^ ID:1-121730331
+ no switchport
+ ip address 38.88.147.121 255.255.255.248
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level pps 5k
+ storm-control action shutdown
+ no cdp enable
+!
+interface FastEthernet0/24
+ description DCN FE to ups.b001157-0.jfk02
+ no switchport
+ ip address 10.30.65.29 255.255.255.252
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ speed 100
+ duplex full
+ storm-control broadcast level 10.00
+ storm-control action shutdown
+!
+interface GigabitEthernet0/1
+ description METRO GIGE to gi0/9-na21.b001157-0.jfk02 ICK:008786
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ speed nonegotiate
+ flowcontrol send off
+ storm-control broadcast level 1.00
+ spanning-tree portfast disable
+ spanning-tree bpdufilter disable
+!
+interface GigabitEthernet0/2
+ description METRO GIGE to gi0/10-na21.b001157-0.jfk02 ICK:008787
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ speed nonegotiate
+ flowcontrol send off
+ storm-control broadcast level 1.00
+ spanning-tree portfast disable
+ spanning-tree bpdufilter disable
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan3537
+ description L3 VLAN to vl3537-mag01.jfk02 ICK:001605
+ ip address 66.250.15.114 255.255.255.252
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ ip ospf authentication-key 7 072C0E6B6B272D
+ ip ospf network point-to-point
+ ip ospf hello-interval 3
+ ip ospf dead-interval 10
+ load-interval 30
+!
+interface Vlan3837
+ description L3 VLAN to vl3837-mag02.jfk02 ICK:001606
+ ip address 66.250.15.118 255.255.255.252
+ no ip redirects
+ no ip proxy-arp
+ ip mtu 1500
+ ip ospf authentication-key 7 072C0E6B6B272D
+ ip ospf network point-to-point
+ ip ospf hello-interval 3
+ ip ospf dead-interval 10
+ load-interval 30
+!
+router ospf 174
+ router-id 66.250.2.240
+ log-adjacency-changes
+ area 37 authentication
+ network 66.250.2.240 0.0.0.0 area 37
+ network 66.250.15.112 0.0.0.3 area 37
+ network 66.250.15.116 0.0.0.3 area 37
+ distance 16
+!
+router bgp 174
+ no synchronization
+ bgp router-id 66.250.2.240
+ no bgp client-to-client reflection
+ no bgp log-neighbor-changes
+ bgp deterministic-med
+ bgp maxas-limit 40
+ redistribute connected route-map connected-bgp
+ redistribute static route-map static-bgp
+ neighbor pop peer-group
+ neighbor pop remote-as 174
+ neighbor pop password 7 0225547C58283B
+ neighbor pop update-source Loopback0
+ neighbor pop send-community
+ neighbor pop route-map pop-out out
+ neighbor 38.105.141.154 remote-as 18518
+ neighbor 38.105.141.154 description CUST-R BGP ^Lagrange Capital Partners^ ID:1-AYFTM
+ neighbor 38.105.141.154 password 7 1042081B51070A
+ neighbor 38.105.141.154 version 4
+ neighbor 38.105.141.154 prefix-list AS18518-in in
+ neighbor 38.105.141.154 prefix-list AS18518-out out
+ neighbor 38.105.141.154 route-map cogent-customer in
+ neighbor 38.112.1.250 remote-as 22151
+ neighbor 38.112.1.250 description CUST-R BGP ^Brean Murray, Carret & Co LLC^ ID:1-97293068
+ neighbor 38.112.1.250 prefix-list AS22151-in in
+ neighbor 38.112.1.250 prefix-list AS22151-out out
+ neighbor 38.112.1.250 route-map cogent-customer in
+ neighbor 66.28.1.60 peer-group pop
+ neighbor 66.28.1.61 peer-group pop
+ maximum-paths 6
+ no auto-summary
+!
+ip classless
+ip route 38.98.96.0 255.255.255.240 38.104.68.166 permanent name ID:1-9B3EH
+ip route 38.108.195.72 255.255.255.248 38.88.5.186 permanent name ID:1-113109553
+ip route 38.108.228.240 255.255.255.240 38.104.203.70 permanent name ID:1-50145146
+ip route 38.112.185.0 255.255.255.0 38.112.28.66
+ip route 38.117.183.136 255.255.255.248 38.112.11.190 permanent
+ip route 38.151.68.128 255.255.255.224 38.112.11.190 permanent
+no ip http server
+no ip http secure-server
+!
+ip bgp-community new-format
+ip community-list 20 permit 174:970
+ip community-list 20 deny
+ip community-list 21 permit 174:10
+ip community-list 21 permit 16631:10
+ip community-list 21 deny
+ip community-list 22 permit 174:70
+ip community-list 22 permit 16631:95
+ip community-list 22 deny
+ip community-list 23 permit 174:120
+ip community-list 23 deny
+ip community-list 24 permit 174:125
+ip community-list 24 permit 16631:100
+ip community-list 24 deny
+ip community-list 25 permit 174:135
+ip community-list 25 permit 16631:110
+ip community-list 25 deny
+ip community-list 26 permit 174:140
+ip community-list 26 deny
+ip community-list 27 deny 174:10
+ip community-list 27 deny 174:70
+ip community-list 27 deny 174:120
+ip community-list 27 deny 174:125
+ip community-list 27 deny 174:135
+ip community-list 27 deny 174:140
+ip community-list 27 deny 174:970
+ip community-list 27 deny 174:971
+ip community-list 27 deny 174:975
+ip community-list 27 deny 174:980
+ip community-list 27 deny 174:981
+ip community-list 27 deny 174:985
+ip community-list 27 deny 174:990
+ip community-list 27 deny 174:991
+ip community-list 27 deny 16631:990
+ip community-list 27 deny 16631:991
+ip community-list 27 deny 16631:10
+ip community-list 27 deny 16631:95
+ip community-list 27 deny 16631:100
+ip community-list 27 deny 16631:110
+ip community-list 27 permit
+ip as-path access-list 15 permit _1_
+ip as-path access-list 15 permit _209_
+ip as-path access-list 15 permit _701_
+ip as-path access-list 15 permit _702_
+ip as-path access-list 15 permit _1239_
+ip as-path access-list 15 permit _1299_
+ip as-path access-list 15 permit _1668_
+ip as-path access-list 15 permit _2548_
+ip as-path access-list 15 permit _2914_
+ip as-path access-list 15 permit _3320_
+ip as-path access-list 15 permit _3356_
+ip as-path access-list 15 permit _3549_
+ip as-path access-list 15 permit _3561_
+ip as-path access-list 15 permit _4200_
+ip as-path access-list 15 permit _5400_
+ip as-path access-list 15 permit _5511_
+ip as-path access-list 15 permit _6461_
+ip as-path access-list 15 permit _7018_
+ip as-path access-list 15 permit _7132_
+ip as-path access-list 15 permit _7911_
+ip tacacs source-interface Loopback0
+!
+ip prefix-list AS18518-in permit 38.101.163.63/32
+ip prefix-list AS18518-in permit 38.105.158.0/24
+ip prefix-list AS18518-in deny 0.0.0.0/0 le 32
+!
+ip prefix-list AS18518-out permit 38.101.163.62/32
+ip prefix-list AS18518-out deny 0.0.0.0/0 le 32
+!
+ip prefix-list AS22151-in permit 38.117.137.0/24
+ip prefix-list AS22151-in permit 66.250.3.245/32
+ip prefix-list AS22151-in deny 0.0.0.0/0 le 32
+!
+ip prefix-list AS22151-out permit 66.250.3.244/32
+ip prefix-list AS22151-out deny 0.0.0.0/0 le 32
+!
+ip prefix-list deny-all deny 0.0.0.0/0 le 32
+!
+ip prefix-list permit-32 permit 0.0.0.0/0 ge 32
+!
+ip prefix-list permit-bad permit 0.0.0.0/0
+ip prefix-list permit-bad permit 0.0.0.0/32
+ip prefix-list permit-bad permit 127.0.0.0/8 le 32
+ip prefix-list permit-bad permit 191.255.0.0/16 le 32
+ip prefix-list permit-bad permit 192.0.2.0/24 le 32
+ip prefix-list permit-bad permit 223.255.255.0/24 le 32
+ip prefix-list permit-bad permit 224.0.0.0/3 le 32
+!
+ip prefix-list permit-ep permit 192.41.177.0/24 le 32
+ip prefix-list permit-ep permit 192.157.69.0/24 le 32
+ip prefix-list permit-ep permit 198.32.128.0/17 le 32
+ip prefix-list permit-ep permit 206.220.242.0/23 le 32
+!
+ip prefix-list permit-pop-subnets permit 10.32.0.0/16 le 32
+ip prefix-list permit-pop-subnets deny 0.0.0.0/0 le 32
+!
+ip prefix-list permit-rfc1918 permit 10.0.0.0/8 le 32
+ip prefix-list permit-rfc1918 permit 172.16.0.0/12 le 32
+ip prefix-list permit-rfc1918 permit 192.168.0.0/16 le 32
+!
+ip prefix-list permit-subaggregate deny 38.0.0.0/8
+ip prefix-list permit-subaggregate permit 38.0.0.0/8 le 32
+ip prefix-list permit-subaggregate deny 64.4.192.0/19
+ip prefix-list permit-subaggregate permit 64.4.192.0/19 le 32
+ip prefix-list permit-subaggregate deny 64.17.0.0/18
+ip prefix-list permit-subaggregate permit 64.17.0.0/18 le 32
+ip prefix-list permit-subaggregate deny 66.28.0.0/16
+ip prefix-list permit-subaggregate permit 66.28.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 66.71.224.0/20
+ip prefix-list permit-subaggregate permit 66.71.224.0/20 le 32
+ip prefix-list permit-subaggregate deny 66.102.96.0/19
+ip prefix-list permit-subaggregate permit 66.102.96.0/19 le 32
+ip prefix-list permit-subaggregate deny 66.132.0.0/17
+ip prefix-list permit-subaggregate permit 66.132.0.0/17 le 32
+ip prefix-list permit-subaggregate deny 66.250.0.0/16
+ip prefix-list permit-subaggregate permit 66.250.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 80.91.64.0/19
+ip prefix-list permit-subaggregate permit 80.91.64.0/19 le 32
+ip prefix-list permit-subaggregate deny 81.2.128.0/18
+ip prefix-list permit-subaggregate permit 81.2.128.0/18 le 32
+ip prefix-list permit-subaggregate deny 82.129.0.0/17
+ip prefix-list permit-subaggregate permit 82.129.0.0/17 le 32
+ip prefix-list permit-subaggregate deny 130.117.0.0/16
+ip prefix-list permit-subaggregate permit 130.117.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 136.161.0.0/16
+ip prefix-list permit-subaggregate permit 136.161.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 149.2.0.0/16
+ip prefix-list permit-subaggregate permit 149.2.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 149.6.0.0/15
+ip prefix-list permit-subaggregate permit 149.6.0.0/15 le 32
+ip prefix-list permit-subaggregate deny 149.12.0.0/15
+ip prefix-list permit-subaggregate permit 149.12.0.0/15 le 32
+ip prefix-list permit-subaggregate deny 149.33.0.0/16
+ip prefix-list permit-subaggregate permit 149.33.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 149.120.0.0/16
+ip prefix-list permit-subaggregate permit 149.120.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 149.127.0.0/16
+ip prefix-list permit-subaggregate permit 149.127.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 154.6.0.0/15
+ip prefix-list permit-subaggregate permit 154.6.0.0/15 le 32
+ip prefix-list permit-subaggregate deny 154.40.0.0/13
+ip prefix-list permit-subaggregate permit 154.40.0.0/13 le 32
+ip prefix-list permit-subaggregate deny 154.48.0.0/12
+ip prefix-list permit-subaggregate permit 154.48.0.0/12 le 32
+ip prefix-list permit-subaggregate deny 192.246.0.0/16
+ip prefix-list permit-subaggregate permit 192.246.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 199.29.0.0/16
+ip prefix-list permit-subaggregate permit 199.29.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 199.98.0.0/15
+ip prefix-list permit-subaggregate permit 199.98.0.0/15 le 32
+ip prefix-list permit-subaggregate deny 199.100.0.0/16
+ip prefix-list permit-subaggregate permit 199.100.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 204.4.0.0/14
+ip prefix-list permit-subaggregate permit 204.4.0.0/14 le 32
+ip prefix-list permit-subaggregate deny 204.217.0.0/16
+ip prefix-list permit-subaggregate permit 204.217.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 204.240.0.0/14
+ip prefix-list permit-subaggregate permit 204.240.0.0/14 le 32
+ip prefix-list permit-subaggregate deny 205.215.0.0/18
+ip prefix-list permit-subaggregate permit 205.215.0.0/18 le 32
+ip prefix-list permit-subaggregate deny 206.0.0.0/13
+ip prefix-list permit-subaggregate permit 206.0.0.0/13 le 32
+ip prefix-list permit-subaggregate deny 206.119.0.0/16
+ip prefix-list permit-subaggregate permit 206.119.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 206.183.224.0/19
+ip prefix-list permit-subaggregate permit 206.183.224.0/19 le 32
+ip prefix-list permit-subaggregate deny 206.232.0.0/14
+ip prefix-list permit-subaggregate permit 206.232.0.0/14 le 32
+ip prefix-list permit-subaggregate deny 206.236.0.0/15
+ip prefix-list permit-subaggregate permit 206.236.0.0/15 le 32
+ip prefix-list permit-subaggregate deny 207.31.64.0/18
+ip prefix-list permit-subaggregate permit 207.31.64.0/18 le 32
+ip prefix-list permit-subaggregate deny 207.60.0.0/16
+ip prefix-list permit-subaggregate permit 207.60.0.0/16 le 32
+ip prefix-list permit-subaggregate deny 207.153.64.0/18
+ip prefix-list permit-subaggregate permit 207.153.64.0/18 le 32
+ip prefix-list permit-subaggregate deny 207.230.0.0/19
+ip prefix-list permit-subaggregate permit 207.230.0.0/19 le 32
+ip prefix-list permit-subaggregate deny 209.41.192.0/18
+ip prefix-list permit-subaggregate permit 209.41.192.0/18 le 32
+ip prefix-list permit-subaggregate deny 209.61.0.0/17
+ip prefix-list permit-subaggregate permit 209.61.0.0/17 le 32
+ip prefix-list permit-subaggregate deny 209.115.0.0/17
+ip prefix-list permit-subaggregate permit 209.115.0.0/17 le 32
+ip prefix-list permit-subaggregate deny 209.146.0.0/17
+ip prefix-list permit-subaggregate permit 209.146.0.0/17 le 32
+ip prefix-list permit-subaggregate deny 213.146.160.0/19
+ip prefix-list permit-subaggregate permit 213.146.160.0/19 le 32
+ip prefix-list permit-subaggregate deny 216.28.0.0/15
+ip prefix-list permit-subaggregate permit 216.28.0.0/15 le 32
+ip prefix-list permit-subaggregate deny 216.55.80.0/20
+ip prefix-list permit-subaggregate permit 216.55.80.0/20 le 32
+ip prefix-list permit-subaggregate deny 216.168.64.0/19
+ip prefix-list permit-subaggregate permit 216.168.64.0/19 le 32
+ip prefix-list permit-subaggregate deny 216.229.128.0/20
+ip prefix-list permit-subaggregate permit 216.229.128.0/20 le 32
+ip prefix-list permit-subaggregate deny 217.71.112.0/20
+ip prefix-list permit-subaggregate permit 217.71.112.0/20 le 32
+!
+ip prefix-list permit-supernets permit 38.0.0.0/8
+ip prefix-list permit-supernets permit 64.17.48.0/20
+ip prefix-list permit-supernets permit 66.28.0.0/16
+ip prefix-list permit-supernets permit 66.132.0.0/17
+ip prefix-list permit-supernets permit 66.250.0.0/16
+ip prefix-list permit-supernets permit 136.161.0.0/16
+ip prefix-list permit-supernets permit 149.2.0.0/16
+ip prefix-list permit-supernets permit 149.6.0.0/15
+ip prefix-list permit-supernets permit 149.11.0.0/16
+ip prefix-list permit-supernets permit 149.33.0.0/16
+ip prefix-list permit-supernets permit 149.120.0.0/16
+ip prefix-list permit-supernets permit 149.127.0.0/16
+ip prefix-list permit-supernets permit 154.6.0.0/15
+ip prefix-list permit-supernets permit 154.48.0.0/12
+ip prefix-list permit-supernets permit 192.246.0.0/16
+ip prefix-list permit-supernets permit 199.29.0.0/16
+ip prefix-list permit-supernets permit 199.98.0.0/15
+ip prefix-list permit-supernets permit 199.100.0.0/16
+ip prefix-list permit-supernets permit 204.4.0.0/14
+ip prefix-list permit-supernets permit 204.217.0.0/16
+ip prefix-list permit-supernets permit 204.240.0.0/14
+ip prefix-list permit-supernets permit 205.215.0.0/18
+ip prefix-list permit-supernets permit 206.0.0.0/13
+ip prefix-list permit-supernets permit 206.119.0.0/16
+ip prefix-list permit-supernets permit 206.183.224.0/19
+ip prefix-list permit-supernets permit 206.232.0.0/14
+ip prefix-list permit-supernets permit 206.236.0.0/15
+ip prefix-list permit-supernets permit 207.31.64.0/18
+ip prefix-list permit-supernets permit 207.60.0.0/16
+ip prefix-list permit-supernets permit 207.153.64.0/18
+ip prefix-list permit-supernets permit 209.41.192.0/18
+ip prefix-list permit-supernets permit 209.61.0.0/17
+ip prefix-list permit-supernets permit 209.115.0.0/17
+ip prefix-list permit-supernets permit 209.146.0.0/17
+ip prefix-list permit-supernets permit 216.28.0.0/15
+ip prefix-list permit-supernets permit 216.168.64.0/20
+logging trap debugging
+logging facility local3
+logging source-interface Loopback0
+logging 66.28.3.132
+logging 66.250.251.232
+logging 66.250.251.237
+logging 66.250.251.245
+access-list 1 deny   any
+access-list 5 permit any
+access-list 15 permit 66.28.0.210
+access-list 15 permit 66.28.0.238
+access-list 15 permit 66.28.3.14
+access-list 15 permit 66.28.3.247
+access-list 15 permit 66.28.3.252
+access-list 15 permit 66.250.251.224 0.0.0.31
+access-list 15 permit 66.250.255.208 0.0.0.15
+access-list 15 permit 80.245.32.75
+access-list 15 permit 80.245.32.128 0.0.0.15
+access-list 15 permit 130.117.19.66
+access-list 17 permit 10.30.71.112 0.0.0.3
+access-list 17 permit 10.30.71.120 0.0.0.3
+access-list 17 permit 10.30.71.192 0.0.0.3
+access-list 17 permit 10.30.71.248 0.0.0.3
+access-list 17 permit 66.28.3.0 0.0.0.255
+access-list 17 permit 80.91.64.50
+access-list 17 permit 80.245.32.74
+access-list 18 deny   38.28.1.0 0.0.0.255
+access-list 18 deny   38.28.4.0 0.0.0.255
+access-list 18 deny   66.28.1.0 0.0.0.255
+access-list 18 deny   66.28.2.0 0.0.0.255
+access-list 18 deny   66.250.0.0 0.0.1.255
+access-list 18 deny   66.250.2.0 0.0.0.255
+access-list 18 deny   66.250.24.0 0.0.3.255
+access-list 18 deny   154.54.4.0 0.0.0.255
+access-list 18 deny   172.28.172.28
+access-list 18 permit any
+access-list 101 permit ip 10.3.0.0 0.0.15.255 any
+access-list 101 permit ip 10.21.16.0 0.0.0.255 any
+access-list 101 permit ip 10.24.0.0 0.3.255.255 any
+access-list 101 permit ip 10.28.0.0 0.0.255.255 any
+access-list 101 permit ip 10.30.0.0 0.0.255.255 any
+access-list 101 permit ip 10.33.0.0 0.0.255.255 any
+access-list 101 permit ip 10.34.28.0 0.0.0.255 any
+access-list 101 permit ip 10.43.0.0 0.0.255.255 any
+access-list 101 permit ip 38.19.1.0 0.0.0.255 any
+access-list 101 permit ip 38.100.53.0 0.0.0.15 any
+access-list 101 permit ip 38.184.189.0 0.0.0.127 any
+access-list 101 permit ip 38.200.193.0 0.0.0.255 any
+access-list 101 permit ip 38.223.237.0 0.0.0.255 any
+access-list 101 permit ip 66.28.0.0 0.0.7.255 any
+access-list 101 permit ip 66.28.20.24 0.0.0.3 any
+access-list 101 permit ip 66.250.16.0 0.0.7.255 any
+access-list 101 permit ip 66.250.250.0 0.0.1.255 any
+access-list 101 permit ip 66.250.255.208 0.0.0.15 any
+access-list 101 permit ip 80.91.67.48 0.0.0.15 any
+access-list 101 permit ip 80.245.32.0 0.0.0.255 any
+access-list 101 permit ip 130.117.19.64 0.0.0.7 any
+access-list 101 permit ip 130.117.112.136 0.0.0.7 any
+access-list 101 permit ip 130.117.228.0 0.0.0.255 any
+access-list 101 permit ip 130.117.254.0 0.0.0.255 any
+access-list 101 permit ip 149.127.0.0 0.0.255.255 any
+access-list 101 permit ip 154.24.0.0 0.0.255.255 any
+access-list 101 permit ip 154.25.0.0 0.0.255.255 any
+access-list 101 permit ip 154.26.0.0 0.0.63.255 any
+access-list 101 permit ip 154.54.0.0 0.0.255.255 any
+access-list 101 permit ip host 172.28.172.28 any
+access-list 101 permit ip 172.29.0.0 0.0.0.255 any
+access-list 101 permit ip 172.30.0.0 0.0.255.255 any
+access-list 101 permit ip 192.168.128.0 0.0.31.255 any
+access-list 101 permit ip 192.168.168.0 0.0.3.255 any
+access-list 101 permit ip 212.20.150.0 0.0.1.255 any
+access-list 101 deny   ip any any
+access-list 2000 permit tcp 10.3.0.0 0.0.15.255 any eq 22
+access-list 2000 permit tcp 10.3.0.0 0.0.15.255 any eq telnet
+access-list 2000 permit tcp 10.7.240.0 0.0.15.255 any eq 22
+access-list 2000 permit tcp 10.7.240.0 0.0.15.255 any eq telnet
+access-list 2000 permit tcp 10.21.16.0 0.0.0.255 any eq 22
+access-list 2000 permit tcp 10.21.16.0 0.0.0.255 any eq telnet
+access-list 2000 permit tcp 10.24.0.0 0.3.255.255 any eq 22
+access-list 2000 permit tcp 10.24.0.0 0.3.255.255 any eq telnet
+access-list 2000 permit tcp 10.28.0.0 0.0.255.255 any eq 22
+access-list 2000 permit tcp 10.28.0.0 0.0.255.255 any eq telnet
+access-list 2000 permit tcp 10.30.0.0 0.0.255.255 any eq 22
+access-list 2000 permit tcp 10.30.0.0 0.0.255.255 any eq telnet
+access-list 2000 permit tcp 10.33.0.0 0.0.255.255 any eq 22
+access-list 2000 permit tcp 10.33.0.0 0.0.255.255 any eq telnet
+access-list 2000 permit tcp 10.34.28.0 0.0.0.255 any eq 22
+access-list 2000 permit tcp 10.34.28.0 0.0.0.255 any eq telnet
+access-list 2000 permit tcp 38.19.1.0 0.0.0.255 any eq 22
+access-list 2000 permit tcp 38.19.1.0 0.0.0.255 any eq telnet
+access-list 2000 permit tcp 38.20.32.0 0.0.31.255 any eq 22
+access-list 2000 permit tcp 38.20.32.0 0.0.31.255 any eq telnet
+access-list 2000 permit tcp 38.100.53.0 0.0.0.15 any eq 22
+access-list 2000 permit tcp 38.100.53.0 0.0.0.15 any eq telnet
+access-list 2000 permit tcp 38.104.58.28 0.0.0.3 any eq 22
+access-list 2000 permit tcp 38.104.58.28 0.0.0.3 any eq telnet
+access-list 2000 permit tcp 38.104.78.28 0.0.0.3 any eq 22
+access-list 2000 permit tcp 38.104.78.28 0.0.0.3 any eq telnet
+access-list 2000 permit tcp 38.112.32.0 0.0.7.255 any eq 22
+access-list 2000 permit tcp 38.112.32.0 0.0.7.255 any eq telnet
+access-list 2000 permit tcp 38.184.189.0 0.0.0.127 any eq 22
+access-list 2000 permit tcp 38.184.189.0 0.0.0.127 any eq telnet
+access-list 2000 permit tcp 38.200.193.0 0.0.0.255 any eq 22
+access-list 2000 permit tcp 38.200.193.0 0.0.0.255 any eq telnet
+access-list 2000 permit tcp 38.223.237.0 0.0.0.255 any eq 22
+access-list 2000 permit tcp 38.223.237.0 0.0.0.255 any eq telnet
+access-list 2000 permit tcp 66.28.0.0 0.0.7.255 any eq 22
+access-list 2000 permit tcp 66.28.0.0 0.0.7.255 any eq telnet
+access-list 2000 permit tcp 66.28.20.24 0.0.0.3 any eq 22
+access-list 2000 permit tcp 66.28.20.24 0.0.0.3 any eq telnet
+access-list 2000 permit tcp 66.28.30.64 0.0.0.3 any eq 22
+access-list 2000 permit tcp 66.28.30.64 0.0.0.3 any eq telnet
+access-list 2000 permit tcp 66.28.64.0 0.0.3.255 any eq 22
+access-list 2000 permit tcp 66.28.64.0 0.0.3.255 any eq telnet
+access-list 2000 permit tcp 66.250.8.0 0.0.7.255 any eq 22
+access-list 2000 permit tcp 66.250.8.0 0.0.7.255 any eq telnet
+access-list 2000 permit tcp 66.250.24.0 0.0.3.255 any eq 22
+access-list 2000 permit tcp 66.250.24.0 0.0.3.255 any eq telnet
+access-list 2000 permit tcp 66.250.251.240 0.0.0.3 any eq 22
+access-list 2000 permit tcp 66.250.251.240 0.0.0.3 any eq telnet
+access-list 2000 permit tcp 80.91.67.48 0.0.0.15 any eq 22
+access-list 2000 permit tcp 80.91.67.48 0.0.0.15 any eq telnet
+access-list 2000 permit tcp 130.117.0.0 0.0.3.255 any eq 22
+access-list 2000 permit tcp 130.117.0.0 0.0.3.255 any eq telnet
+access-list 2000 permit tcp 130.117.48.0 0.0.3.255 any eq 22
+access-list 2000 permit tcp 130.117.48.0 0.0.3.255 any eq telnet
+access-list 2000 permit tcp 130.117.112.136 0.0.0.7 any eq 22
+access-list 2000 permit tcp 130.117.112.136 0.0.0.7 any eq telnet
+access-list 2000 permit tcp 136.161.0.0 0.0.255.255 any eq 22
+access-list 2000 permit tcp 136.161.0.0 0.0.255.255 any eq telnet
+access-list 2000 permit tcp 149.6.140.92 0.0.0.3 any eq 22
+access-list 2000 permit tcp 149.6.140.92 0.0.0.3 any eq telnet
+access-list 2000 permit tcp 149.127.109.0 0.0.0.255 any eq 22
+access-list 2000 permit tcp 149.127.109.0 0.0.0.255 any eq telnet
+access-list 2000 permit tcp 154.54.0.0 0.0.255.255 any eq 22
+access-list 2000 permit tcp 154.54.0.0 0.0.255.255 any eq telnet
+access-list 2000 permit tcp 172.28.1.0 0.0.0.255 any eq 22
+access-list 2000 permit tcp 172.28.1.0 0.0.0.255 any eq telnet
+access-list 2000 permit tcp host 172.28.172.28 any eq 22
+access-list 2000 permit tcp host 172.28.172.28 any eq telnet
+access-list 2000 permit tcp 172.29.0.0 0.0.0.255 any eq 22
+access-list 2000 permit tcp 172.29.0.0 0.0.0.255 any eq telnet
+access-list 2000 permit tcp 192.168.168.0 0.0.3.255 any eq 22
+access-list 2000 permit tcp 192.168.168.0 0.0.3.255 any eq telnet
+access-list 2000 permit tcp 212.20.150.0 0.0.1.255 any eq 22
+access-list 2000 permit tcp 212.20.150.0 0.0.1.255 any eq telnet
+access-list 2000 deny   ip any any
+route-map cogent-customer deny 10
+ match ip address prefix-list permit-bad permit-ep permit-rfc1918 permit-supernets
+!
+route-map cogent-customer deny 20
+ match as-path 15
+!
+route-map cogent-customer deny 30
+ match community 20
+!
+route-map cogent-customer permit 40
+ match community 21
+ set local-preference 10
+ set comm-list 27 delete
+ set community 174:20999 174:21001 174:22013 additive
+!
+route-map cogent-customer permit 50
+ match community 22
+ set local-preference 70
+ set comm-list 27 delete
+ set community 174:20999 174:21001 174:22013 additive
+!
+route-map cogent-customer permit 60
+ match community 23
+ set local-preference 120
+ set comm-list 27 delete
+ set community 174:20999 174:21001 174:22013 additive
+!
+route-map cogent-customer permit 70
+ match community 24
+ set local-preference 125
+ set comm-list 27 delete
+ set community 174:20999 174:21001 174:22013 additive
+!
+route-map cogent-customer permit 80
+ match community 25
+ set local-preference 135
+ set comm-list 27 delete
+ set community 174:20999 174:21001 174:22013 additive
+!
+route-map cogent-customer permit 90
+ match community 26
+ set local-preference 140
+ set comm-list 27 delete
+ set community 174:20999 174:21001 174:22013 additive
+!
+route-map cogent-customer permit 100
+ set local-preference 130
+ set comm-list 27 delete
+ set community 174:20999 174:21001 174:22013 additive
+!
+route-map cogent-private-customer deny 10
+ match ip address prefix-list permit-bad permit-ep permit-supernets
+!
+route-map cogent-private-customer deny 20
+ match as-path 15
+!
+route-map cogent-private-customer deny 30
+ match community 20
+!
+route-map cogent-private-customer permit 40
+ match community 21
+ set local-preference 10
+ set comm-list 27 delete
+ set community 174:990 174:20999 174:21001 additive
+!
+route-map cogent-private-customer permit 50
+ match community 22
+ set local-preference 70
+ set comm-list 27 delete
+ set community 174:990 174:20999 174:21001 additive
+!
+route-map cogent-private-customer permit 60
+ match community 23
+ set local-preference 120
+ set comm-list 27 delete
+ set community 174:990 174:20999 174:21001 additive
+!
+route-map cogent-private-customer permit 70
+ match community 24
+ set local-preference 125
+ set comm-list 27 delete
+ set community 174:990 174:20999 174:21001 additive
+!
+route-map cogent-private-customer permit 80
+ match community 25
+ set local-preference 135
+ set comm-list 27 delete
+ set community 174:990 174:20999 174:21001 additive
+!
+route-map cogent-private-customer permit 90
+ match community 26
+ set local-preference 140
+ set comm-list 27 delete
+ set community 174:990 174:20999 174:21001 additive
+!
+route-map cogent-private-customer permit 100
+ set local-preference 130
+ set comm-list 27 delete
+ set community 174:990 174:20999 174:21001 additive
+!
+route-map connected-bgp permit 10
+ match interface Loopback0
+ set origin igp
+ set community 174:990 174:20997 174:21001 174:22013
+!
+route-map connected-bgp permit 20
+ match ip address prefix-list permit-pop-subnets
+ set origin igp
+ set community 174:990 174:20122 174:21001 174:22013
+!
+route-map connected-bgp permit 30
+ match ip address prefix-list permit-subaggregate
+ set origin igp
+ set community 174:990 174:20121 174:21001 174:22013
+!
+route-map connected-bgp permit 40
+ set origin igp
+ set community 174:990 174:21001 174:22013
+!
+route-map pop-out permit 10
+ set community 174:10004 additive
+!
+route-map static-bgp deny 5
+ match tag 992
+!
+route-map static-bgp permit 10
+ match tag 999
+ set ip next-hop 66.250.2.240
+ set local-preference 145
+ set community 174:20999 174:21001 174:22013
+!
+route-map static-bgp permit 20
+ match tag 121
+ set ip next-hop 66.250.2.240
+ set local-preference 145
+ set community 174:20121 174:21001 174:22013
+!
+route-map static-bgp permit 30
+ match ip address prefix-list permit-32
+ match interface Null0
+ set ip next-hop 66.250.2.240
+ set local-preference 145
+ set origin igp
+ set community 174:990 174:20911 174:21001 174:22013
+!
+route-map static-bgp permit 40
+ match ip address prefix-list permit-pop-subnets
+ set ip next-hop 66.250.2.240
+ set local-preference 145
+ set origin igp
+ set community 174:20122 174:21001 174:22013
+!
+route-map static-bgp permit 50
+ match ip address prefix-list permit-subaggregate
+ set ip next-hop 66.250.2.240
+ set local-preference 145
+ set origin igp
+ set community 174:20121 174:21001 174:22013
+!
+route-map static-bgp permit 55
+ match tag 993
+ set local-preference 145
+ set origin igp
+ set community 174:20999 174:21001 174:22013
+!
+route-map static-bgp permit 60
+ set ip next-hop 66.250.2.240
+ set local-preference 145
+ set origin igp
+ set community 174:20999 174:21001 174:22013
+!
+snmp-server community 0000000902000002163DDEA0 view v1default RO 15
+snmp-server community b44d0493382900262b762f63dee7610e view v1default RO 15
+snmp-server community d0e45d39667afa5d5bd2 RO 15
+snmp-server trap-source Loopback0
+snmp-server location jfk02 - Node ID # 01157-0
+snmp-server contact Cogent Communications (noc@cogentco.com)
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps entity
+snmp-server enable traps bgp threshold prefix
+snmp-server enable traps config
+snmp-server host 66.28.3.134 0000000902000002163DDEA0  entity config snmp
+snmp-server host 66.250.251.232 0000000902000002163DDEA0  bgp entity config snmp
+snmp-server host 66.250.251.237 0000000902000002163DDEA0  bgp entity config snmp
+snmp-server host 66.250.251.245 0000000902000002163DDEA0  bgp entity config snmp
+snmp ifmib ifalias long
+tacacs-server host 66.28.3.131 timeout 2 key 7 091D1A5B1A5043415E0D057A2A7C2B6234754557455B
+tacacs-server host 66.28.3.10 timeout 2 key 7 12485145115E58577F2A2578326D2142064155510501
+tacacs-server host 66.28.3.194 timeout 2 key 7 0870181C0A4C5144470A0D542B73277932627443544E
+tacacs-server directed-request
+radius-server source-ports 1645-1646
+!
+control-plane
+!
+banner motd ^C
+Cogent Communications     (na01.b001157-0.jfk02.atlas.cogentco.com)
+Unauthorized Access is Prohibited
+
+Quote goes here.
+^C
+alias exec bgp show ip bgp
+alias exec cpu show processes cpu
+alias exec ipint show ip interface brief
+alias exec ospf show ip ospf neighbor
+alias exec route show ip route
+alias exec shw show
+alias exec shwo show
+alias exec sid show interfaces description
+alias exec sri show running-config interface
+alias interface addvl switchport trunk allowed vlan add
+alias interface rmvl switchport trunk allowed vlan remove
+!
+line con 0
+ exec-timeout 0 0
+ password 7 082743410B18171316
+line vty 0 4
+ access-class 2000 in
+ exec-timeout 180 0
+ password 7 082743410B18171316
+ logging synchronous
+ exec prompt timestamp
+ transport preferred none
+line vty 5 15
+ access-class 2000 in
+ exec-timeout 180 0
+ password 7 082743410B18171316
+ logging synchronous
+ exec prompt timestamp
+ transport preferred none
+!
+ntp source Loopback0
+ntp access-group peer 17
+ntp access-group serve-only 18
+ntp server 10.30.71.114
+ntp server 10.30.71.122
+ntp server 10.30.71.194
+ntp server 10.30.71.250
+ntp server 66.28.3.70
+ntp server 66.28.3.135
+end
+

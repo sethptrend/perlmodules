@@ -1,0 +1,4503 @@
+!RANCID-CONTENT-TYPE: cisco
+!
+!Chassis type: ASR-9010 - a ASR9K router
+!CPU: Intel 686 F6M14S4
+!IOS: XR
+!
+!Memory: main 6291456K
+!Memory: nvram 503k
+!Memory: pcmcia disk0 11817968k
+!Memory: pcmcia disk1 11817968k
+!
+!
+!Image: disk0:asr9k-os-mbi-4.2.3.CSCuc84257-1.0.0/0x100305/mbiasr9k-rsp3.vm
+!
+!Redundancy: Active  node 0/RSP0/CPU0
+!Redundancy: Standby node 0/RSP1/CPU0 status: ready
+!Redundancy: Standby node 0/RSP1/CPU0 status: NSR-not-configured
+!Redundancy: Switchover count 0
+!
+!ROM Bootstrap: Version 0.62(c) 1994-2012 by Cisco Systems,  Inc.
+!
+!SSH: Version Cisco-2.0 
+!
+!Image:   Active Packages:
+!Image:     disk0:asr9k-px-4.2.3.CSCud37459-0.0.5.d
+!Image:     disk0:asr9k-px-4.2.3.CSCuc67573-0.0.4.i
+!Image:     disk0:asr9k-px-4.2.3.CSCuc84257-1.0.0
+!Image:     disk0:asr9k-services-p-px-4.2.3
+!Image:     disk0:asr9k-video-px-4.2.3
+!Image:     disk0:asr9k-optic-px-4.2.3
+!Image:     disk0:infra__mibs__ceredundancymib_asr9k-px-0.0.0
+!Image:     disk0:asr9k-mini-px-4.2.3
+!Image:     disk0:asr9k-k9sec-px-4.2.3
+!Image:     disk0:asr9k-mpls-px-4.2.3
+!Image:     disk0:asr9k-mgbl-px-4.2.3
+!Image:     disk0:asr9k-mcast-px-4.2.3
+!Image:     disk0:asr9k-px-4.2.3.CSCuc15603-0.0.4.i
+!Image:     disk0:asr9k-px-4.2.3.CSCub47984-0.0.2.i
+!Image:     disk0:asr9k-px-4.2.3.CSCtz95112-0.0.3.i
+!Image:     disk0:asr9k-px-4.2.3.CSCtw78622-0.0.3.i
+!Image:     disk0:asr9k-px-4.2.3.CSCud87100-1.0.0
+!Image:     disk0:asr9k-px-4.2.3.CSCuc22135-0.0.2.i
+!Image:     disk0:asr9k-fpd-px-4.2.3
+!ImageCommit:   Committed Packages:
+!ImageCommit:     disk0:asr9k-px-4.2.3.CSCud37459-0.0.5.d
+!ImageCommit:     disk0:asr9k-px-4.2.3.CSCuc67573-0.0.4.i
+!ImageCommit:     disk0:asr9k-px-4.2.3.CSCuc84257-1.0.0
+!ImageCommit:     disk0:asr9k-services-p-px-4.2.3
+!ImageCommit:     disk0:asr9k-video-px-4.2.3
+!ImageCommit:     disk0:asr9k-optic-px-4.2.3
+!ImageCommit:     disk0:infra__mibs__ceredundancymib_asr9k-px-0.0.0
+!ImageCommit:     disk0:asr9k-mini-px-4.2.3
+!ImageCommit:     disk0:asr9k-k9sec-px-4.2.3
+!ImageCommit:     disk0:asr9k-mpls-px-4.2.3
+!ImageCommit:     disk0:asr9k-mgbl-px-4.2.3
+!ImageCommit:     disk0:asr9k-mcast-px-4.2.3
+!ImageCommit:     disk0:asr9k-px-4.2.3.CSCuc15603-0.0.4.i
+!ImageCommit:     disk0:asr9k-px-4.2.3.CSCub47984-0.0.2.i
+!ImageCommit:     disk0:asr9k-px-4.2.3.CSCtz95112-0.0.3.i
+!ImageCommit:     disk0:asr9k-px-4.2.3.CSCtw78622-0.0.3.i
+!ImageCommit:     disk0:asr9k-px-4.2.3.CSCud87100-1.0.0
+!ImageCommit:     disk0:asr9k-px-4.2.3.CSCuc22135-0.0.2.i
+!ImageCommit:     disk0:asr9k-fpd-px-4.2.3
+!
+!Power: R/S/I 	Modules		Capacity	Status
+!Power: 			(W)
+!Power: 0/PM0/* host	PM	2100		Ok
+!Power: 0/PM1/* host	PM	2100		Ok
+!Power: 0/PM2/* host	PM	2100		Ok
+!Power: 0/PM3/* host	PM	2100		Ok
+!Power: 0/PM4/* host	PM	2100		Ok
+!Power: 0/PM5/* host	PM	2100		Ok
+!Power: R/S/I 	Power Supply	Voltage		Current
+!Power: 	(W)		(V)		(A)
+!Power: R/S/I 	Power Draw	Voltage		Current
+!Power: 	(W)		(V)		(A)
+!Power: R/S/I 		Power Draw	Voltage		Current
+!Power: 		(W)		(V)		(A)
+!Power: R/S/I 	Power Draw	Voltage		Current
+!Power: 	(W)		(V)		(A)
+!Power: Power Budget Summary for Rack 0
+!Power: Power Shelves Type: DC
+!Power: Power Budget Strict Mode: Disabled 
+!Power: Total Power Capacity:				12600W
+!Power: Usable Power Capacity:				10500W
+!Power: Supply Failure Protected Capacity:		10500W
+!Power: Worst Case Power Used:				5050W
+!Power:  Slot							   Max Watts
+!Power:  ----							   ---------
+!Power:  0/0/CPU0							 575
+!Power:  0/1/CPU0							 575
+!Power:  0/2/CPU0							 575
+!Power:  0/3/CPU0							 875
+!Power:  0/RSP0/CPU0							 350
+!Power:  0/RSP1/CPU0							 350
+!Power:  0/6/CPU0							 575
+!Power:  0/7/CPU0							 575
+!Power:  0/FT0/SP							 300
+!Power:  0/FT1/SP							 300
+!Power: Worst Case Power Available:		5450W
+!Power: Supply Protected Capacity Available:	5450W
+!
+!
+!Power: Power Budget Summary for Rack 0
+!
+!
+!
+!BootFlash: BOOT variable = disk0:asr9k-os-mbi-4.2.3.CSCuc84257-1.0.0/0x100305/mbiasr9k-rsp3.vm,1;
+!BootFlash: CONFREG variable = 0x2102
+!
+!
+!Flash: disk0a: Directory of disk0a:/usr/
+!Flash: disk0a: No such file or directory
+!
+!
+!Slot 0/RSP0/CPU0:  ASR9K Route Switch Processor with 440G/slot Fabric and 6GB 
+!Slot 0/RSP0/CPU0/MAIN: part A9K-RSP440-TR, Top Assy# 68-3938-05, serial FOC1636N0SL
+!Slot 0/RSP0/CPU0/PLD:    Motherboard: N/A, Processor: 0x0 (rev: 2.174), Power: N/A
+!Slot 0/RSP0/CPU0/MONLIB: 
+!Slot 0/RSP0/CPU0/Board State: IOS XR RUN
+!Slot 0/RSP0/CPU0/ROMMON: version 0.62 [ASR9K x86 ROMMON],
+!
+!Slot 0/RSP1/CPU0:  ASR9K Route Switch Processor with 440G/slot Fabric and 6GB 
+!Slot 0/RSP1/CPU0/MAIN: part A9K-RSP440-TR, Top Assy# 68-3938-05, serial FOC1641N1XC
+!Slot 0/RSP1/CPU0/MAIN: part ASR-9010-FAN, Top Assy# 68-3322-02, serial FOX1436XHJT
+!Slot 0/RSP1/CPU0/MAIN: part ASR-9010-FAN, Top Assy# 68-3322-02, serial FOX1431XE2Z
+!Slot 0/RSP1/CPU0/PLD:    Motherboard: N/A, Processor: 0x0 (rev: 2.174), Power: N/A
+!Slot 0/RSP1/CPU0/PLD:    Motherboard: N/A, Processor: N/A, Power: N/A
+!Slot 0/RSP1/CPU0/PLD:    Motherboard: N/A, Processor: N/A, Power: N/A
+!Slot 0/RSP1/CPU0/MONLIB: 
+!Slot 0/RSP1/CPU0/Board State: IOS XR RUN
+!Slot 0/RSP1/CPU0/ROMMON: version 0.62 [ASR9K x86 ROMMON],
+!
+!Slot 0/0/CPU0:  8-Port 10GE Low Queue Line Card, Requires XFPs
+!Slot 0/0/CPU0/MAIN: part A9K-8T-L, Top Assy# 68-3535-02, serial FOC15018091
+!Slot 0/0/CPU0/PLD:    Motherboard: N/A, Processor: 0x480 (rev: 0.0), Power: N/A
+!Slot 0/0/CPU0/Board State: IOS XR RUN
+!Slot 0/0/CPU0/ROMMON: version 1.21(20111102:015748) [ASR9K ROMMON]
+!
+!Slot 0/1/CPU0:  8-Port 10GE Low Queue Line Card, Requires XFPs
+!Slot 0/1/CPU0/MAIN: part A9K-8T-L, Top Assy# 68-3535-01, serial FOC135282BD
+!Slot 0/1/CPU0/PLD:    Motherboard: N/A, Processor: 0x480 (rev: 0.0), Power: N/A
+!Slot 0/1/CPU0/Board State: IOS XR RUN
+!Slot 0/1/CPU0/ROMMON: version 1.03(20100211:014208) [ASR9K ROMMON]
+!
+!Slot 0/2/CPU0:  8-Port 10GE Low Queue Line Card, Requires XFPs
+!Slot 0/2/CPU0/MAIN: part A9K-8T-L, Top Assy# 68-3535-01, serial FOC1402817T
+!Slot 0/2/CPU0/PLD:    Motherboard: N/A, Processor: 0x480 (rev: 0.0), Power: N/A
+!Slot 0/2/CPU0/Board State: IOS XR RUN
+!Slot 0/2/CPU0/ROMMON: version 1.03(20100211:014208) [ASR9K ROMMON]
+!
+!Slot 0/3/CPU0:  36-port 10GE, Packet Transport Optimized LC
+!Slot 0/3/CPU0/MAIN: part A9K-36X10GE-TR, Top Assy# 68-4338-02, serial FOC161981PU
+!Slot 0/3/CPU0/PLD:    Motherboard: N/A, Processor: 0x2380 (rev: 0.0), Power: N/A
+!Slot 0/3/CPU0/Board State: IOS XR RUN
+!Slot 0/3/CPU0/ROMMON: version 1.29(20121004:235447) [ASR9K ROMMON]
+!
+!Slot 0/6/CPU0:  8-Port 10GE Low Queue Line Card, Requires XFPs
+!Slot 0/6/CPU0/MAIN: part A9K-8T-L, Top Assy# 68-3535-01, serial FOC140583GT
+!Slot 0/6/CPU0/PLD:    Motherboard: N/A, Processor: 0x480 (rev: 0.0), Power: N/A
+!Slot 0/6/CPU0/Board State: IOS XR RUN
+!Slot 0/6/CPU0/ROMMON: version 1.03(20100211:014208) [ASR9K ROMMON]
+!
+!Slot 0/7/CPU0:  8-Port 10GE Low Queue Line Card, Requires XFPs
+!Slot 0/7/CPU0/MAIN: part A9K-8T-L, Top Assy# 68-3535-01, serial FOC134680N5
+!Slot 0/7/CPU0/MAIN: part A9K-2KW-DC, Top Assy# 341-00325-01, serial TLD132450EO
+!Slot 0/7/CPU0/MAIN: part A9K-2KW-DC, Top Assy# 341-00325-01, serial TLD131950KJ
+!Slot 0/7/CPU0/MAIN: part A9K-2KW-DC, Top Assy# 341-00325-01, serial TLD132450F3
+!Slot 0/7/CPU0/MAIN: part A9K-2KW-DC, Top Assy# 341-00325-01, serial TLD131950QB
+!Slot 0/7/CPU0/MAIN: part A9K-2KW-DC, Top Assy# 341-00325-01, serial TLD131950MA
+!Slot 0/7/CPU0/MAIN: part A9K-2KW-DC, Top Assy# 341-00325-01, serial TLD132450E5
+!Slot 0/7/CPU0/PLD:    Motherboard: N/A, Processor: 0x480 (rev: 0.0), Power: N/A
+!Slot 0/7/CPU0/PLD:    Motherboard: N/A, Processor: N/A, Power: N/A
+!Slot 0/7/CPU0/PLD:    Motherboard: N/A, Processor: N/A, Power: N/A
+!Slot 0/7/CPU0/PLD:    Motherboard: N/A, Processor: N/A, Power: N/A
+!Slot 0/7/CPU0/PLD:    Motherboard: N/A, Processor: N/A, Power: N/A
+!Slot 0/7/CPU0/PLD:    Motherboard: N/A, Processor: N/A, Power: N/A
+!Slot 0/7/CPU0/PLD:    Motherboard: N/A, Processor: N/A, Power: N/A
+!Slot 0/7/CPU0/Board State: IOS XR RUN
+!Slot 0/7/CPU0/ROMMON: version 1.03(20100211:014208) [ASR9K ROMMON]
+!Slot 0/7/CPU0/Board State: PRESENT
+!Slot 0/7/CPU0/Board State: PRESENT
+!Slot 0/7/CPU0/Board State: PRESENT
+!Slot 0/7/CPU0/Board State: PRESENT
+!Slot 0/7/CPU0/Board State: PRESENT
+!Slot 0/7/CPU0/Board State: PRESENT
+!
+!FPD: 0/RSP0/CPU0: A9K-RSP440-TR              hw ver 1.0    
+!FPD: 0/RSP0/CPU0: lc   cbc    0              sw ver 16.115      Upg/Dng No  
+!FPD: 0/RSP0/CPU0: lc   fpga1  0              sw ver 0.09        Upg/Dng No  
+!FPD: 0/RSP0/CPU0: lc   fpga3  0              sw ver 4.09        Upg/Dng No  
+!FPD: 0/RSP0/CPU0: lc   fpga2  0              sw ver 1.06        Upg/Dng No  
+!FPD: 0/RSP0/CPU0: lc   rommon 0              sw ver 0.62        Upg/Dng No  
+!FPD: 0/RSP0/CPU0: ASR-9010-FAN               hw ver 1.0    
+!FPD: 0/RSP0/CPU0: lc   cbc    2              sw ver 4.02        Upg/Dng No  
+!FPD: 0/RSP0/CPU0: ASR-9010-FAN               hw ver 1.0    
+!FPD: 0/RSP0/CPU0: lc   cbc    3              sw ver 4.02        Upg/Dng No  
+!FPD: 0/RSP1/CPU0: A9K-RSP440-TR              hw ver 1.0    
+!FPD: 0/RSP1/CPU0: lc   cbc    0              sw ver 16.115      Upg/Dng No  
+!FPD: 0/RSP1/CPU0: lc   fpga2  0              sw ver 1.06        Upg/Dng No  
+!FPD: 0/RSP1/CPU0: lc   fpga1  0              sw ver 0.09        Upg/Dng No  
+!FPD: 0/RSP1/CPU0: lc   fpga3  0              sw ver 4.09        Upg/Dng No  
+!FPD: 0/RSP1/CPU0: lc   rommon 0              sw ver 0.62        Upg/Dng No  
+!FPD: 0/0/CPU0: A9K-8T-L                   hw ver 1.0    
+!FPD: 0/0/CPU0: lc   fpga1  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/0/CPU0: lc   fpga2  0              sw ver 0.11        Upg/Dng No  
+!FPD: 0/0/CPU0: lc   cbc    0              sw ver 6.07        Upg/Dng No  
+!FPD: 0/0/CPU0: lc   cpld2  0              sw ver 0.08        Upg/Dng No  
+!FPD: 0/0/CPU0: lc   cpld1  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/0/CPU0: lc   cpld3  0              sw ver 0.03        Upg/Dng No  
+!FPD: 0/0/CPU0: lc   cpld4  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/0/CPU0: lc   rommon 0              sw ver 1.21        Upg/Dng No  
+!FPD: 0/0/CPU0: A9K-8T-L                   hw ver 1.0    
+!FPD: 0/0/CPU0: lc   fpga1  1              sw ver 1.03        Upg/Dng No  
+!FPD: 0/1/CPU0: A9K-8T-L                   hw ver 1.0    
+!FPD: 0/1/CPU0: lc   fpga1  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/1/CPU0: lc   fpga2  0              sw ver 0.11        Upg/Dng No  
+!FPD: 0/1/CPU0: lc   cbc    0              sw ver 6.07        Upg/Dng No  
+!FPD: 0/1/CPU0: lc   cpld2  0              sw ver 0.08        Upg/Dng No  
+!FPD: 0/1/CPU0: lc   cpld1  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/1/CPU0: lc   cpld3  0              sw ver 0.03        Upg/Dng No  
+!FPD: 0/1/CPU0: lc   cpld4  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/1/CPU0: lc   rommon 0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/1/CPU0: A9K-8T-L                   hw ver 1.0    
+!FPD: 0/1/CPU0: lc   fpga1  1              sw ver 1.03        Upg/Dng No  
+!FPD: 0/2/CPU0: A9K-8T-L                   hw ver 1.0    
+!FPD: 0/2/CPU0: lc   fpga1  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/2/CPU0: lc   fpga2  0              sw ver 0.11        Upg/Dng No  
+!FPD: 0/2/CPU0: lc   cbc    0              sw ver 6.07        Upg/Dng No  
+!FPD: 0/2/CPU0: lc   cpld2  0              sw ver 0.08        Upg/Dng No  
+!FPD: 0/2/CPU0: lc   cpld1  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/2/CPU0: lc   cpld3  0              sw ver 0.03        Upg/Dng No  
+!FPD: 0/2/CPU0: lc   cpld4  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/2/CPU0: lc   rommon 0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/2/CPU0: A9K-8T-L                   hw ver 1.0    
+!FPD: 0/2/CPU0: lc   fpga1  1              sw ver 1.03        Upg/Dng No  
+!FPD: 0/3/CPU0: A9K-36x10GE-TR             hw ver 1.0    
+!FPD: 0/3/CPU0: lc   cbc    0              sw ver 15.101      Upg/Dng No  
+!FPD: 0/3/CPU0: lc   fpga2  0              sw ver 1.01        Upg/Dng No  
+!FPD: 0/3/CPU0: lc   fpga3  0              sw ver 1.00        Upg/Dng No  
+!FPD: 0/3/CPU0: lc   fpga4  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/3/CPU0: lc   rommon 0              sw ver 1.29        Upg/Dng No  
+!FPD: 0/6/CPU0: A9K-8T-L                   hw ver 1.0    
+!FPD: 0/6/CPU0: lc   fpga1  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/6/CPU0: lc   fpga2  0              sw ver 0.11        Upg/Dng No  
+!FPD: 0/6/CPU0: lc   cbc    0              sw ver 6.07        Upg/Dng No  
+!FPD: 0/6/CPU0: lc   cpld2  0              sw ver 0.08        Upg/Dng No  
+!FPD: 0/6/CPU0: lc   cpld1  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/6/CPU0: lc   cpld3  0              sw ver 0.03        Upg/Dng No  
+!FPD: 0/6/CPU0: lc   cpld4  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/6/CPU0: lc   rommon 0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/6/CPU0: A9K-8T-L                   hw ver 1.0    
+!FPD: 0/6/CPU0: lc   fpga1  1              sw ver 1.03        Upg/Dng No  
+!FPD: 0/7/CPU0: A9K-8T-L                   hw ver 1.0    
+!FPD: 0/7/CPU0: lc   fpga1  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/7/CPU0: lc   fpga2  0              sw ver 0.11        Upg/Dng No  
+!FPD: 0/7/CPU0: lc   cbc    0              sw ver 6.07        Upg/Dng No  
+!FPD: 0/7/CPU0: lc   cpld2  0              sw ver 0.08        Upg/Dng No  
+!FPD: 0/7/CPU0: lc   cpld1  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/7/CPU0: lc   cpld3  0              sw ver 0.03        Upg/Dng No  
+!FPD: 0/7/CPU0: lc   cpld4  0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/7/CPU0: lc   rommon 0              sw ver 1.03        Upg/Dng No  
+!FPD: 0/7/CPU0: A9K-8T-L                   hw ver 1.0    
+!FPD: 0/7/CPU0: lc   fpga1  1              sw ver 1.03        Upg/Dng No  
+!
+!Platform: % This command is not authorized
+!
+!License: Info : There are no features or licenses to display.
+!
+!NAME: "module 0/RSP0/CPU0",    DESCR: "ASR9K Route Switch Processor with 440G/slot Fabric and 6GB "
+!PID: A9K-RSP440-TR
+!VID: V02
+!SN: FOC1636N0SL
+!NAME: "module 0/RSP0/CPU0",    DESCR: "RSP Card host "
+!VID: N/A
+!NAME: "temperature 0/RSP0/CPU0", DESCR: "Inlet Temperature SensorInlet0"
+!VID: N/A
+!NAME: "temperature 0/RSP0/CPU0", DESCR: "Hot Temperature SensorHotspot0"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P2_SERDES_PLL_LGN"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP0P75_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P0_KAW_LDO"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC0_VDDA"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC1_VDDD_VDDACM"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P0_DAO"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP5P0"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP2P5_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P0_MGTVCC_DAO"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC0_VDDD_VDDACM"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC1_VDDA"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP3P3_CAN"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P9_LDO"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P2_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P2_SERDES_PLL_DAO"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1PX_ARB"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC1_VDD"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P5"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P8_10GPHY_LDO"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P8_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P0_SKT_IO"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP0P75_TMX_VTT"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC0_VDD"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P2"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP3P3_OCXO"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P5_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P0_SKT_CORE"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP3P3"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP7P0"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P8"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P8_OCXO"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP2P5"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P05_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP0/CPU0",   DESCR: "Voltage Sensor - VP1P2_10GPHY_01"
+!VID: N/A
+!NAME: "cpu 0/RSP0/CPU0",       DESCR: " CPU "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " FabSwitch0 "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " FabSwitch1 "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " FabArbiter "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " FIA "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " IntCtrl "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " ClkCtrl "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " 10GPuntFPGA "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " HD "
+!PID: CEU8000C5-EEF-BTA
+!VID: N/A
+!SN: UNIGEN-00000
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " USB0 "
+!PID: CEU8000C5-EEF-BTA
+!VID: N/A
+!SN: UNIGEN-00000
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " USB1 "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " CpuCtrl "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " YDTI "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " LIU "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " MLANSwitch "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " EOBCSwitch "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " HostInftCtrl "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " PHY "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " Offload10GE "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " E10GEDualMAC0 "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " E10GEDualMAC1 "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " EGEDualMAC0 "
+!VID: N/A
+!NAME: "chip 0/RSP0/CPU0",      DESCR: " EGEDualMAC1 "
+!VID: N/A
+!NAME: "MgmtEth0/RSP0/CPU0/0",  DESCR: "RSP Management Ethernet Port"
+!VID: N/A
+!NAME: "MgmtEth0/RSP0/CPU0/1",  DESCR: "RSP Management Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/11", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/0", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/1", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/2", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/3", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/4", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/5", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/6", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/7", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/8", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/12", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "slot mau ControlEthernet0/RSP0/CPU0/S0/12", DESCR: "CE container"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP0/CPU0/S0/13", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "slot mau ControlEthernet0/RSP0/CPU0/S0/13", DESCR: "CE container"
+!VID: N/A
+!NAME: "module 0/RSP1/CPU0",    DESCR: "ASR9K Route Switch Processor with 440G/slot Fabric and 6GB "
+!PID: A9K-RSP440-TR
+!VID: V02
+!SN: FOC1641N1XC
+!NAME: "module 0/RSP1/CPU0",    DESCR: "RSP Card host "
+!VID: N/A
+!NAME: "temperature 0/RSP1/CPU0", DESCR: "Inlet Temperature SensorInlet0"
+!VID: N/A
+!NAME: "temperature 0/RSP1/CPU0", DESCR: "Hot Temperature SensorHotspot0"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P2_SERDES_PLL_LGN"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP0P75_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P0_KAW_LDO"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC0_VDDA"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC1_VDDD_VDDACM"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P0_DAO"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP5P0"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP2P5_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P0_MGTVCC_DAO"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC0_VDDD_VDDACM"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC1_VDDA"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP3P3_CAN"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P9_LDO"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P2_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P2_SERDES_PLL_DAO"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1PX_ARB"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC1_VDD"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P5"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P8_10GPHY_LDO"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P8_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P0_SKT_IO"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP0P75_TMX_VTT"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P0_SAC0_VDD"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P2"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP3P3_OCXO"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P5_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P0_SKT_CORE"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP3P3"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP7P0"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P8"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P8_OCXO"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP2P5"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P05_DB"
+!VID: N/A
+!NAME: "voltage 0/RSP1/CPU0",   DESCR: "Voltage Sensor - VP1P2_10GPHY_01"
+!VID: N/A
+!NAME: "cpu 0/RSP1/CPU0",       DESCR: " CPU "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " FabSwitch0 "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " FabSwitch1 "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " FabArbiter "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " FIA "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " IntCtrl "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " ClkCtrl "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " 10GPuntFPGA "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " HD "
+!PID: eUSB
+!VID: N/A
+!SN: 1E8842121905
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " USB0 "
+!PID: eUSB
+!VID: N/A
+!SN: 1E8842121905
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " USB1 "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " CpuCtrl "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " YDTI "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " LIU "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " MLANSwitch "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " EOBCSwitch "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " HostInftCtrl "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " PHY "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " Offload10GE "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " E10GEDualMAC0 "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " E10GEDualMAC1 "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " EGEDualMAC0 "
+!VID: N/A
+!NAME: "chip 0/RSP1/CPU0",      DESCR: " EGEDualMAC1 "
+!VID: N/A
+!NAME: "MgmtEth0/RSP1/CPU0/0",  DESCR: "RSP Management Ethernet Port"
+!VID: N/A
+!NAME: "MgmtEth0/RSP1/CPU0/1",  DESCR: "RSP Management Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/11", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/0", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/1", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/2", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/3", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/4", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/5", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/6", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/7", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/8", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/12", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "slot mau ControlEthernet0/RSP1/CPU0/S0/12", DESCR: "CE container"
+!VID: N/A
+!NAME: "ControlEthernet0/RSP1/CPU0/S0/13", DESCR: "RSP Control Ethernet Port"
+!VID: N/A
+!NAME: "slot mau ControlEthernet0/RSP1/CPU0/S0/13", DESCR: "CE container"
+!VID: N/A
+!NAME: "fantray 0/FT0/SP",      DESCR: "ASR-9010 Fan Tray"
+!PID: ASR-9010-FAN
+!VID: V01
+!SN: FOX1436XHJT
+!NAME: "module 0/FT0/SP",       DESCR: "Fan-Tray host "
+!VID: N/A
+!NAME: "temperature 0/FT0/SP",  DESCR: "Inlet Temperature SensorInlet0"
+!VID: N/A
+!NAME: "temperature 0/FT0/SP",  DESCR: "Hot Temperature SensorHotspot0"
+!VID: N/A
+!NAME: "fan0 0/FT0/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan1 0/FT0/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan2 0/FT0/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan3 0/FT0/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan4 0/FT0/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan5 0/FT0/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan6 0/FT0/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan7 0/FT0/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan8 0/FT0/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan9 0/FT0/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan10 0/FT0/SP",        DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan11 0/FT0/SP",        DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT0/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fantray 0/FT1/SP",      DESCR: "ASR-9010 Fan Tray"
+!PID: ASR-9010-FAN
+!VID: V01
+!SN: FOX1431XE2Z
+!NAME: "module 0/FT1/SP",       DESCR: "Fan-Tray host "
+!VID: N/A
+!NAME: "temperature 0/FT1/SP",  DESCR: "Inlet Temperature SensorInlet0"
+!VID: N/A
+!NAME: "temperature 0/FT1/SP",  DESCR: "Hot Temperature SensorHotspot0"
+!VID: N/A
+!NAME: "fan0 0/FT1/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan1 0/FT1/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan2 0/FT1/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan3 0/FT1/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan4 0/FT1/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan5 0/FT1/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan6 0/FT1/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan7 0/FT1/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan8 0/FT1/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan9 0/FT1/SP",         DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan10 0/FT1/SP",        DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "fan11 0/FT1/SP",        DESCR: "ASR9K Generic Fan"
+!VID: N/A
+!NAME: "speed 0/FT1/SP",        DESCR: "Fan Speed Sensor"
+!VID: N/A
+!NAME: "module 0/0/CPU0",       DESCR: "8-Port 10GE Low Queue Line Card, Requires XFPs"
+!PID: A9K-8T-L
+!VID: V02
+!SN: FOC15018091
+!NAME: "module 0/0/CPU0",       DESCR: "Line Card host "
+!VID: N/A
+!NAME: "temperature 0/0/CPU0",  DESCR: "Inlet Temperature SensorInlet0"
+!VID: N/A
+!NAME: "temperature 0/0/CPU0",  DESCR: "Hot Temperature SensorHotspot0"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.5V"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.8V"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 3.3V"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.5VB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM0"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.8VC"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 2.5V"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.0VB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM2"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.2VB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - CPU_CORE"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.1VB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.1VC"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 5.0V"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - VP3P3_CAN"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - IBV"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 0.9VB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 0.75V"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 0.75VB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 0.75VC"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 0.75VD"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 0.75VE"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.0V_RAV"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.5VC"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.8VD"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.1VD"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.1VE"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 7.0V"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - ZARLINK_1.8V"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - ZARLINK_3.3V"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.8VB"
+!VID: N/A
+!NAME: "cpu 0/0/CPU0",          DESCR: " CPU "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " NP0 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " NP1 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " NP2 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " NP3 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " NP4 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " NP5 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " NP6 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " NP7 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " FIA "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " FIA1 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " Bridge0 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " Bridge1 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " CPUCtrl "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " USB "
+!PID: eUSB
+!VID: N/A
+!SN: 1E8848111137
+!NAME: "chip 0/0/CPU0",         DESCR: " PortCtrl "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " PHYCtrl "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " DBCtrl "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " ClkCtrl "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " PHY0 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " PHY1 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " PHY2 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " PHY3 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " PHY4 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " PHY5 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " PHY6 "
+!VID: N/A
+!NAME: "chip 0/0/CPU0",         DESCR: " PHY7 "
+!VID: N/A
+!NAME: "daughtercard 0/0/CPU0", DESCR: " 8 Port Ten Gigabit Ethernet Daughter board "
+!PID: A9K-8T-L
+!VID: V02
+!SN: FOC15018091
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.1VC_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.5VC_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM6_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 0.75VD_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.8V_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 0.75VE_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.8VD_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY01_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 3.3V_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM4_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 0.75V_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 0.75VB_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 0.75VC_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.2VB_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 2.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.8VC_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.5VB_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.1VA_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV1_RX_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.0V_RAV1_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV1_TX_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.0VB_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM7_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.1VD_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 7.0V_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 5.0V_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.1VB_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM5_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.2VC_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY23_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.8V_10G_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY45_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY67_DB"
+!VID: N/A
+!NAME: "voltage 0/0/CPU0",      DESCR: "Voltage Sensor - 5.0V_XFP_DB"
+!VID: N/A
+!NAME: "TenGigE0/0/0/0",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/0/CPU0/0", DESCR: "XFP container"
+!VID: N/A
+!NAME: "module mau TenGigE0/0/CPU0/0", DESCR: "Multirate 10GBASE-LR and OC-192/STM-64 SR-1 XFP, SMF"
+!PID: XFP-10GLR-OC192SR
+!VID: V02
+!SN: ECL100600J9
+!NAME: "temperature 0/0/CPU0/0", DESCR: "Transceiver Temperature Sensor"
+!VID: N/A
+!NAME: "power Tx 0/0/CPU0/0",   DESCR: "Transceiver Tx Power Sensor"
+!VID: N/A
+!NAME: "power Rx 0/0/CPU0/0",   DESCR: "Transceiver Rx Power Sensor"
+!VID: N/A
+!NAME: "current 0/0/CPU0/0",    DESCR: "Transceiver Transmit Bias Current Sensor"
+!VID: N/A
+!NAME: "TenGigE0/0/0/1",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/0/CPU0/1", DESCR: "XFP container"
+!VID: N/A
+!NAME: "module mau TenGigE0/0/CPU0/1", DESCR: "Multirate 10GBASE-LR and OC-192/STM-64 SR-1 XFP, SMF"
+!PID: XFP-10GLR-OC192SR
+!VID: V02
+!SN: ECL100600A0
+!NAME: "temperature 0/0/CPU0/1", DESCR: "Transceiver Temperature Sensor"
+!VID: N/A
+!NAME: "power Tx 0/0/CPU0/1",   DESCR: "Transceiver Tx Power Sensor"
+!VID: N/A
+!NAME: "power Rx 0/0/CPU0/1",   DESCR: "Transceiver Rx Power Sensor"
+!VID: N/A
+!NAME: "current 0/0/CPU0/1",    DESCR: "Transceiver Transmit Bias Current Sensor"
+!VID: N/A
+!NAME: "TenGigE0/0/0/2",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/0/CPU0/2", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/0/0/3",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/0/CPU0/3", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/0/0/4",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/0/CPU0/4", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/0/0/5",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/0/CPU0/5", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/0/0/6",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/0/CPU0/6", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/0/0/7",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/0/CPU0/7", DESCR: "XFP container"
+!VID: N/A
+!NAME: "module 0/1/CPU0",       DESCR: "8-Port 10GE Low Queue Line Card, Requires XFPs"
+!PID: A9K-8T-L
+!VID: V01
+!SN: FOC135282BD
+!NAME: "module 0/1/CPU0",       DESCR: "Line Card host "
+!VID: N/A
+!NAME: "temperature 0/1/CPU0",  DESCR: "Inlet Temperature SensorInlet0"
+!VID: N/A
+!NAME: "temperature 0/1/CPU0",  DESCR: "Hot Temperature SensorHotspot0"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.5V"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.8V"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 3.3V"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.5VB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM0"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.8VC"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 2.5V"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.0VB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM2"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.2VB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - CPU_CORE"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.1VB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.1VC"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 5.0V"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - VP3P3_CAN"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - IBV"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 0.9VB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 0.75V"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 0.75VB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 0.75VC"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 0.75VD"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 0.75VE"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.0V_RAV"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.5VC"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.8VD"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.1VD"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.1VE"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 7.0V"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - ZARLINK_1.8V"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - ZARLINK_3.3V"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.8VB"
+!VID: N/A
+!NAME: "cpu 0/1/CPU0",          DESCR: " CPU "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " NP0 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " NP1 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " NP2 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " NP3 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " NP4 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " NP5 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " NP6 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " NP7 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " FIA "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " FIA1 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " Bridge0 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " Bridge1 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " CPUCtrl "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " USB "
+!PID: eUSB
+!VID: N/A
+!SN: 1E884E040021
+!NAME: "chip 0/1/CPU0",         DESCR: " PortCtrl "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " PHYCtrl "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " DBCtrl "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " ClkCtrl "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " PHY0 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " PHY1 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " PHY2 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " PHY3 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " PHY4 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " PHY5 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " PHY6 "
+!VID: N/A
+!NAME: "chip 0/1/CPU0",         DESCR: " PHY7 "
+!VID: N/A
+!NAME: "daughtercard 0/1/CPU0", DESCR: " 8 Port Ten Gigabit Ethernet Daughter board "
+!PID: A9K-8T-L
+!VID: V01
+!SN: FOC135282BD
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.1VC_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.5VC_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM6_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 0.75VD_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.8V_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 0.75VE_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.8VD_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY01_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 3.3V_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM4_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 0.75V_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 0.75VB_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 0.75VC_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.2VB_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 2.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.8VC_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.5VB_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.1VA_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV1_RX_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.0V_RAV1_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV1_TX_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.0VB_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM7_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.1VD_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 7.0V_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 5.0V_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.1VB_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM5_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.2VC_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY23_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.8V_10G_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY45_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY67_DB"
+!VID: N/A
+!NAME: "voltage 0/1/CPU0",      DESCR: "Voltage Sensor - 5.0V_XFP_DB"
+!VID: N/A
+!NAME: "TenGigE0/1/0/0",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/1/CPU0/0", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/1/0/1",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/1/CPU0/1", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/1/0/2",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/1/CPU0/2", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/1/0/3",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/1/CPU0/3", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/1/0/4",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/1/CPU0/4", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/1/0/5",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/1/CPU0/5", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/1/0/6",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/1/CPU0/6", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/1/0/7",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/1/CPU0/7", DESCR: "XFP container"
+!VID: N/A
+!NAME: "module 0/2/CPU0",       DESCR: "8-Port 10GE Low Queue Line Card, Requires XFPs"
+!PID: A9K-8T-L
+!VID: V01
+!SN: FOC1402817T
+!NAME: "module 0/2/CPU0",       DESCR: "Line Card host "
+!VID: N/A
+!NAME: "temperature 0/2/CPU0",  DESCR: "Inlet Temperature SensorInlet0"
+!VID: N/A
+!NAME: "temperature 0/2/CPU0",  DESCR: "Hot Temperature SensorHotspot0"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.5V"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.8V"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 3.3V"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.5VB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM0"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.8VC"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 2.5V"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.0VB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM2"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.2VB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - CPU_CORE"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.1VB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.1VC"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 5.0V"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - VP3P3_CAN"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - IBV"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 0.9VB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 0.75V"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 0.75VB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 0.75VC"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 0.75VD"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 0.75VE"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.0V_RAV"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.5VC"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.8VD"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.1VD"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.1VE"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 7.0V"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - ZARLINK_1.8V"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - ZARLINK_3.3V"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.8VB"
+!VID: N/A
+!NAME: "cpu 0/2/CPU0",          DESCR: " CPU "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " NP0 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " NP1 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " NP2 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " NP3 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " NP4 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " NP5 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " NP6 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " NP7 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " FIA "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " FIA1 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " Bridge0 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " Bridge1 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " CPUCtrl "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " USB "
+!PID: eUSB
+!VID: N/A
+!SN: 1E884E010513
+!NAME: "chip 0/2/CPU0",         DESCR: " PortCtrl "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " PHYCtrl "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " DBCtrl "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " ClkCtrl "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " PHY0 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " PHY1 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " PHY2 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " PHY3 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " PHY4 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " PHY5 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " PHY6 "
+!VID: N/A
+!NAME: "chip 0/2/CPU0",         DESCR: " PHY7 "
+!VID: N/A
+!NAME: "daughtercard 0/2/CPU0", DESCR: " 8 Port Ten Gigabit Ethernet Daughter board "
+!PID: A9K-8T-L
+!VID: V01
+!SN: FOC1402817T
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.1VC_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.5VC_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM6_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 0.75VD_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.8V_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 0.75VE_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.8VD_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY01_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 3.3V_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM4_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 0.75V_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 0.75VB_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 0.75VC_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.2VB_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 2.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.8VC_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.5VB_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.1VA_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV1_RX_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.0V_RAV1_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV1_TX_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.0VB_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM7_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.1VD_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 7.0V_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 5.0V_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.1VB_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM5_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.2VC_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY23_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.8V_10G_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY45_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY67_DB"
+!VID: N/A
+!NAME: "voltage 0/2/CPU0",      DESCR: "Voltage Sensor - 5.0V_XFP_DB"
+!VID: N/A
+!NAME: "TenGigE0/2/0/0",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/2/CPU0/0", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/2/0/1",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/2/CPU0/1", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/2/0/2",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/2/CPU0/2", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/2/0/3",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/2/CPU0/3", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/2/0/4",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/2/CPU0/4", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/2/0/5",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/2/CPU0/5", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/2/0/6",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/2/CPU0/6", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/2/0/7",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/2/CPU0/7", DESCR: "XFP container"
+!VID: N/A
+!NAME: "module 0/3/CPU0",       DESCR: "36-port 10GE, Packet Transport Optimized LC"
+!PID: A9K-36X10GE-TR
+!VID: V00
+!SN: FOC161981PU
+!NAME: "module 0/3/CPU0",       DESCR: "Line Card host "
+!VID: N/A
+!NAME: "temperature 0/3/CPU0",  DESCR: "Inlet Temperature SensorInlet0"
+!VID: N/A
+!NAME: "temperature 0/3/CPU0",  DESCR: "Hot Temperature SensorHotspot0"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 0.9_T23_CORE"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_SKT4_CORE"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P5_SKT4_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP2P5_SKT4_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - IBV_D"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP0P75_N2_VTT"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP0P75_N3_VTT"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_CPU_CORE"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_CPU_PLAT"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_LAN"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_N2_CORE"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_N3_CORE"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_SAC_CORE"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_SAC_VDDA"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_SAC_VDDD"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_SKT1_CORE"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_SKT1_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_SKT2_CORE"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_SKT2_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_SKT3_CORE"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P2_SAC_VDDT"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P2"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P5_N2_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P5_N3_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P5_SKT1_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P5_SKT2_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P5_SKT3_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP2P5_SKT3_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P8_SAC_VDDR"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P8_N23_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P8_ZL_CORE"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP2P5_SKT1_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP2P5_SKT2_IO"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP2P5"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP3P3_CAN"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP3P3"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP3P3_ZL_VDD"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P5"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP5P0"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP7P0"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P8"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VTT_0P75_CPU"
+!VID: N/A
+!NAME: "cpu 0/3/CPU0",          DESCR: " CPU "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " NP0 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " NP1 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " NP2 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " NP3 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " NP4 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " NP5 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " FIA0 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " FIA1 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " FIA2 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " FIA3 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " FIA4 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " FIA5 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " X-Bar "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " CPUCtrl "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " Arbiter "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " PortCtrl "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " PHYCtrl "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " USB "
+!PID: eUSB
+!VID: N/A
+!SN: 1E8842061356
+!NAME: "chip 0/3/CPU0",         DESCR: " ClkCtrl "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " PHY0 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " PHY1 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " PHY2 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " PHY3 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " PHY4 "
+!VID: N/A
+!NAME: "chip 0/3/CPU0",         DESCR: " PHY5 "
+!VID: N/A
+!NAME: "daughtercard 0/3/CPU0", DESCR: " 36 Port Ten Gigabit Ethernet Daughter board "
+!PID: A9K-36X10GE-TR
+!VID: V00
+!SN: FOC161981PU
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 0.75_N0_VTT_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 0.75_N1_VTT_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP0P75_N4_VTT_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 0.75_N5_VTT_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP0P9_HEXP45_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP0P9_HEXP45_LDO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP0P9_BNK_CORE_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 0.9_HEXP01_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 0.9_HEXP01_LDO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 0.9_HEXP23_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 0.9_HEXP23_LDO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 0.9_T01_CORE_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.0_ATLI_CORE_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP0P9_T45_CORE_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.0_N1_CORE_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_N4_CORE_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.0_N5_CORE_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.0_SKT0_CORE_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.0_SKT0_SKM_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P0_SKT5_CORE_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P1_BNK_LDO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P2_HEXP01_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P2_HEXP23_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P2_HEXP45_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.2_HEXP01_LDO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.2_HEXP23_LDO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P2_HEXP45_LDO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P5_SKT5_IO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.5_N0_IO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P5_N45_IO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.5_SKT0_IO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP5P0_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP7P0_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.8_N01_IO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP1P8_N45_IO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 2.5_N01_SKT0_IO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP2P5_N45_SKT5_IO_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.8V_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - VP3P3_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 2.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/3/CPU0",      DESCR: "Voltage Sensor - 1.0_N0_CORE_DB"
+!VID: N/A
+!NAME: "TenGigE0/3/0/0",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/0", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/1",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/1", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/2",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/2", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/3",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/3", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/4",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/4", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/5",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/5", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/6",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/6", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/7",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/7", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/8",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/8", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/9",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/9", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/10",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/10", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/11",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/11", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/12",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/12", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/13",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/13", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/14",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/14", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/15",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/15", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/16",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/16", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/17",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/17", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/18",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/18", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/19",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/19", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/20",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/20", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/21",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/21", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/22",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/22", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/23",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/23", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/24",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/24", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/25",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/25", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/26",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/26", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/27",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/27", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/28",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/28", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/29",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/29", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/30",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/30", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/31",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/31", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/32",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/32", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/33",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/33", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/34",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/34", DESCR: "SFP container"
+!VID: N/A
+!NAME: "TenGigE0/3/0/35",       DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/3/CPU0/35", DESCR: "SFP container"
+!VID: N/A
+!NAME: "module 0/6/CPU0",       DESCR: "8-Port 10GE Low Queue Line Card, Requires XFPs"
+!PID: A9K-8T-L
+!VID: V01
+!SN: FOC140583GT
+!NAME: "module 0/6/CPU0",       DESCR: "Line Card host "
+!VID: N/A
+!NAME: "temperature 0/6/CPU0",  DESCR: "Inlet Temperature SensorInlet0"
+!VID: N/A
+!NAME: "temperature 0/6/CPU0",  DESCR: "Hot Temperature SensorHotspot0"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.5V"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.8V"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 3.3V"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.5VB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM0"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.8VC"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 2.5V"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.0VB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM2"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.2VB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - CPU_CORE"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.1VB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.1VC"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 5.0V"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - VP3P3_CAN"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - IBV"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 0.9VB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 0.75V"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 0.75VB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 0.75VC"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 0.75VD"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 0.75VE"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.0V_RAV"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.5VC"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.8VD"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.1VD"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.1VE"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 7.0V"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - ZARLINK_1.8V"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - ZARLINK_3.3V"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.8VB"
+!VID: N/A
+!NAME: "cpu 0/6/CPU0",          DESCR: " CPU "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " NP0 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " NP1 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " NP2 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " NP3 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " NP4 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " NP5 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " NP6 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " NP7 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " FIA "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " FIA1 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " Bridge0 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " Bridge1 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " CPUCtrl "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " USB "
+!PID: eUSB
+!VID: N/A
+!SN: 1E884E012348
+!NAME: "chip 0/6/CPU0",         DESCR: " PortCtrl "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " PHYCtrl "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " DBCtrl "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " ClkCtrl "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " PHY0 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " PHY1 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " PHY2 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " PHY3 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " PHY4 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " PHY5 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " PHY6 "
+!VID: N/A
+!NAME: "chip 0/6/CPU0",         DESCR: " PHY7 "
+!VID: N/A
+!NAME: "daughtercard 0/6/CPU0", DESCR: " 8 Port Ten Gigabit Ethernet Daughter board "
+!PID: A9K-8T-L
+!VID: V01
+!SN: FOC140583GT
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.1VC_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.5VC_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM6_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 0.75VD_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.8V_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 0.75VE_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.8VD_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY01_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 3.3V_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM4_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 0.75V_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 0.75VB_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 0.75VC_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.2VB_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 2.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.8VC_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.5VB_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.1VA_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV1_RX_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.0V_RAV1_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV1_TX_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.0VB_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM7_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.1VD_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 7.0V_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 5.0V_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.1VB_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM5_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.2VC_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY23_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.8V_10G_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY45_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY67_DB"
+!VID: N/A
+!NAME: "voltage 0/6/CPU0",      DESCR: "Voltage Sensor - 5.0V_XFP_DB"
+!VID: N/A
+!NAME: "TenGigE0/6/0/0",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/6/CPU0/0", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/6/0/1",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/6/CPU0/1", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/6/0/2",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/6/CPU0/2", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/6/0/3",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/6/CPU0/3", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/6/0/4",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/6/CPU0/4", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/6/0/5",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/6/CPU0/5", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/6/0/6",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/6/CPU0/6", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/6/0/7",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/6/CPU0/7", DESCR: "XFP container"
+!VID: N/A
+!NAME: "module 0/7/CPU0",       DESCR: "8-Port 10GE Low Queue Line Card, Requires XFPs"
+!PID: A9K-8T-L
+!VID: V01
+!SN: FOC134680N5
+!NAME: "module 0/7/CPU0",       DESCR: "Line Card host "
+!VID: N/A
+!NAME: "temperature 0/7/CPU0",  DESCR: "Inlet Temperature SensorInlet0"
+!VID: N/A
+!NAME: "temperature 0/7/CPU0",  DESCR: "Hot Temperature SensorHotspot0"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.5V"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.8V"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 3.3V"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.5VB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM0"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.8VC"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 2.5V"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.0VB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM2"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.2VB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - CPU_CORE"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.1VB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.1VC"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 5.0V"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - VP3P3_CAN"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - IBV"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 0.9VB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 0.75V"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 0.75VB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 0.75VC"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 0.75VD"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 0.75VE"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.0V_RAV"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.5VC"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.8VD"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.1VD"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.1VE"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 7.0V"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - ZARLINK_1.8V"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - ZARLINK_3.3V"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.8VB"
+!VID: N/A
+!NAME: "cpu 0/7/CPU0",          DESCR: " CPU "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " NP0 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " NP1 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " NP2 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " NP3 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " NP4 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " NP5 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " NP6 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " NP7 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " FIA "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " FIA1 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " Bridge0 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " Bridge1 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " CPUCtrl "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " USB "
+!PID: eUSB
+!VID: N/A
+!SN: 1E8842010736
+!NAME: "chip 0/7/CPU0",         DESCR: " PortCtrl "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " PHYCtrl "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " DBCtrl "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " ClkCtrl "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " PHY0 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " PHY1 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " PHY2 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " PHY3 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " PHY4 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " PHY5 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " PHY6 "
+!VID: N/A
+!NAME: "chip 0/7/CPU0",         DESCR: " PHY7 "
+!VID: N/A
+!NAME: "daughtercard 0/7/CPU0", DESCR: " 8 Port Ten Gigabit Ethernet Daughter board "
+!PID: A9K-8T-L
+!VID: V01
+!SN: FOC134680N5
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.1VC_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.5VC_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM6_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 0.75VD_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.8V_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 0.75VE_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.8VD_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY01_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 3.3V_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM4_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 0.75V_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 0.75VB_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 0.75VC_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.2VB_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 2.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.5V_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.8VC_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.5VB_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.1VA_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV1_RX_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.0V_RAV1_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.2V_RAV1_TX_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.0VB_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM7_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.1VD_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 7.0V_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 5.0V_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.1VB_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.0V_TCAM5_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.2VC_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY23_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.8V_10G_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY45_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 1.2V_10G_PHY67_DB"
+!VID: N/A
+!NAME: "voltage 0/7/CPU0",      DESCR: "Voltage Sensor - 5.0V_XFP_DB"
+!VID: N/A
+!NAME: "TenGigE0/7/0/0",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/7/CPU0/0", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/7/0/1",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/7/CPU0/1", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/7/0/2",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/7/CPU0/2", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/7/0/3",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/7/CPU0/3", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/7/0/4",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/7/CPU0/4", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/7/0/5",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/7/CPU0/5", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/7/0/6",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/7/CPU0/6", DESCR: "XFP container"
+!VID: N/A
+!NAME: "TenGigE0/7/0/7",        DESCR: "Ten GigabitEthernet Port"
+!VID: N/A
+!NAME: "slot mau TenGigE0/7/CPU0/7", DESCR: "XFP container"
+!VID: N/A
+!NAME: "power-module 0/PM0/SP", DESCR: "2kW DC Power Module"
+!PID: A9K-2KW-DC
+!VID: V01
+!SN: TLD132450EO
+!NAME: "module 0/PM0/SP",       DESCR: "Power-Module host "
+!VID: N/A
+!NAME: "capacity 0/PM0/SP",     DESCR: "Power Module Capacity Sensor"
+!VID: N/A
+!NAME: "voltage 0/PM0/SP",      DESCR: "Power Module Voltage Sensor"
+!VID: N/A
+!NAME: "current 0/PM0/SP",      DESCR: "Power Module Current Sensor"
+!VID: N/A
+!NAME: "power-module 0/PM1/SP", DESCR: "2kW DC Power Module"
+!PID: A9K-2KW-DC
+!VID: V01
+!SN: TLD131950KJ
+!NAME: "module 0/PM1/SP",       DESCR: "Power-Module host "
+!VID: N/A
+!NAME: "capacity 0/PM1/SP",     DESCR: "Power Module Capacity Sensor"
+!VID: N/A
+!NAME: "voltage 0/PM1/SP",      DESCR: "Power Module Voltage Sensor"
+!VID: N/A
+!NAME: "current 0/PM1/SP",      DESCR: "Power Module Current Sensor"
+!VID: N/A
+!NAME: "power-module 0/PM2/SP", DESCR: "2kW DC Power Module"
+!PID: A9K-2KW-DC
+!VID: V01
+!SN: TLD132450F3
+!NAME: "module 0/PM2/SP",       DESCR: "Power-Module host "
+!VID: N/A
+!NAME: "capacity 0/PM2/SP",     DESCR: "Power Module Capacity Sensor"
+!VID: N/A
+!NAME: "voltage 0/PM2/SP",      DESCR: "Power Module Voltage Sensor"
+!VID: N/A
+!NAME: "current 0/PM2/SP",      DESCR: "Power Module Current Sensor"
+!VID: N/A
+!NAME: "power-module 0/PM3/SP", DESCR: "2kW DC Power Module"
+!PID: A9K-2KW-DC
+!VID: V01
+!SN: TLD131950QB
+!NAME: "module 0/PM3/SP",       DESCR: "Power-Module host "
+!VID: N/A
+!NAME: "capacity 0/PM3/SP",     DESCR: "Power Module Capacity Sensor"
+!VID: N/A
+!NAME: "voltage 0/PM3/SP",      DESCR: "Power Module Voltage Sensor"
+!VID: N/A
+!NAME: "current 0/PM3/SP",      DESCR: "Power Module Current Sensor"
+!VID: N/A
+!NAME: "power-module 0/PM4/SP", DESCR: "2kW DC Power Module"
+!PID: A9K-2KW-DC
+!VID: V01
+!SN: TLD131950MA
+!NAME: "module 0/PM4/SP",       DESCR: "Power-Module host "
+!VID: N/A
+!NAME: "capacity 0/PM4/SP",     DESCR: "Power Module Capacity Sensor"
+!VID: N/A
+!NAME: "voltage 0/PM4/SP",      DESCR: "Power Module Voltage Sensor"
+!VID: N/A
+!NAME: "current 0/PM4/SP",      DESCR: "Power Module Current Sensor"
+!VID: N/A
+!NAME: "power-module 0/PM5/SP", DESCR: "2kW DC Power Module"
+!PID: A9K-2KW-DC
+!VID: V01
+!SN: TLD132450E5
+!NAME: "module 0/PM5/SP",       DESCR: "Power-Module host "
+!VID: N/A
+!NAME: "capacity 0/PM5/SP",     DESCR: "Power Module Capacity Sensor"
+!VID: N/A
+!NAME: "voltage 0/PM5/SP",      DESCR: "Power Module Voltage Sensor"
+!VID: N/A
+!NAME: "current 0/PM5/SP",      DESCR: "Power Module Current Sensor"
+!VID: N/A
+!NAME: "chassis ASR-9010-AC",   DESCR: "ASR-9010 AC Chassis"
+!PID: ASR-9010-AC
+!VID: V01
+!SN: FOX1438GTRN
+!
+!INV  NAME: "module 0/RSP0/CPU0"
+!INV DESCR: "ASR9K Route Switch Processor with 440G/slot Fabric and 6GB "
+!INV   PID: A9K-RSP440-TR
+!INV   VID: V02
+!INV    SN: FOC1636N0SL
+!
+!INV  NAME: "module 0/RSP1/CPU0"
+!INV DESCR: "ASR9K Route Switch Processor with 440G/slot Fabric and 6GB "
+!INV   PID: A9K-RSP440-TR
+!INV   VID: V02
+!INV    SN: FOC1641N1XC
+!
+!INV  NAME: "fantray 0/FT0/SP"
+!INV DESCR: "ASR-9010 Fan Tray"
+!INV   PID: ASR-9010-FAN
+!INV   VID: V01
+!INV    SN: FOX1436XHJT
+!
+!INV  NAME: "fan0 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan1 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan2 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan3 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan4 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan5 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan6 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan7 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan8 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan9 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan10 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan11 0/FT0/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fantray 0/FT1/SP"
+!INV DESCR: "ASR-9010 Fan Tray"
+!INV   PID: ASR-9010-FAN
+!INV   VID: V01
+!INV    SN: FOX1431XE2Z
+!
+!INV  NAME: "fan0 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan1 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan2 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan3 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan4 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan5 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan6 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan7 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan8 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan9 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan10 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "fan11 0/FT1/SP"
+!INV DESCR: "ASR9K Generic Fan"
+!INV   PID:    
+!INV   VID: N/A
+!INV    SN: 
+!
+!INV  NAME: "module 0/0/CPU0"
+!INV DESCR: "8-Port 10GE Low Queue Line Card, Requires XFPs"
+!INV   PID: A9K-8T-L
+!INV   VID: V02
+!INV    SN: FOC15018091
+!
+!INV  NAME: "module mau TenGigE0/0/CPU0/0"
+!INV DESCR: "Multirate 10GBASE-LR and OC-192/STM-64 SR-1 XFP, SMF"
+!INV   PID: XFP-10GLR-OC192SR  
+!INV   VID: V02 
+!INV    SN: ECL100600J9 
+!
+!INV  NAME: "module mau TenGigE0/0/CPU0/1"
+!INV DESCR: "Multirate 10GBASE-LR and OC-192/STM-64 SR-1 XFP, SMF"
+!INV   PID: XFP-10GLR-OC192SR  
+!INV   VID: V02 
+!INV    SN: ECL100600A0 
+!
+!INV  NAME: "module 0/1/CPU0"
+!INV DESCR: "8-Port 10GE Low Queue Line Card, Requires XFPs"
+!INV   PID: A9K-8T-L
+!INV   VID: V01
+!INV    SN: FOC135282BD
+!
+!INV  NAME: "module 0/2/CPU0"
+!INV DESCR: "8-Port 10GE Low Queue Line Card, Requires XFPs"
+!INV   PID: A9K-8T-L
+!INV   VID: V01
+!INV    SN: FOC1402817T
+!
+!INV  NAME: "module 0/3/CPU0"
+!INV DESCR: "36-port 10GE, Packet Transport Optimized LC"
+!INV   PID: A9K-36X10GE-TR
+!INV   VID: V00
+!INV    SN: FOC161981PU
+!
+!INV  NAME: "module 0/6/CPU0"
+!INV DESCR: "8-Port 10GE Low Queue Line Card, Requires XFPs"
+!INV   PID: A9K-8T-L
+!INV   VID: V01
+!INV    SN: FOC140583GT
+!
+!INV  NAME: "module 0/7/CPU0"
+!INV DESCR: "8-Port 10GE Low Queue Line Card, Requires XFPs"
+!INV   PID: A9K-8T-L
+!INV   VID: V01
+!INV    SN: FOC134680N5
+!
+!INV  NAME: "power-module 0/PM0/SP"
+!INV DESCR: "2kW DC Power Module"
+!INV   PID: A9K-2KW-DC
+!INV   VID: V01
+!INV    SN: TLD132450EO
+!
+!INV  NAME: "power-module 0/PM1/SP"
+!INV DESCR: "2kW DC Power Module"
+!INV   PID: A9K-2KW-DC
+!INV   VID: V01
+!INV    SN: TLD131950KJ
+!
+!INV  NAME: "power-module 0/PM2/SP"
+!INV DESCR: "2kW DC Power Module"
+!INV   PID: A9K-2KW-DC
+!INV   VID: V01
+!INV    SN: TLD132450F3
+!
+!INV  NAME: "power-module 0/PM3/SP"
+!INV DESCR: "2kW DC Power Module"
+!INV   PID: A9K-2KW-DC
+!INV   VID: V01
+!INV    SN: TLD131950QB
+!
+!INV  NAME: "power-module 0/PM4/SP"
+!INV DESCR: "2kW DC Power Module"
+!INV   PID: A9K-2KW-DC
+!INV   VID: V01
+!INV    SN: TLD131950MA
+!
+!INV  NAME: "power-module 0/PM5/SP"
+!INV DESCR: "2kW DC Power Module"
+!INV   PID: A9K-2KW-DC
+!INV   VID: V01
+!INV    SN: TLD132450E5
+!
+!INV  NAME: "chassis ASR-9010-AC"
+!INV DESCR: "ASR-9010 AC Chassis"
+!INV   PID: ASR-9010-AC
+!INV   VID: V01
+!INV    SN: FOX1438GTRN
+!
+!INT: Loopback0                    up          up          1500   -     -      -       -
+!INT: Loopback1                    up          up          1500   -     -      -       -
+!INT: Loopback6447                 up          up          1500   -     -      -       -
+!INT: Null0                        up          up          1500   -     -      -       -
+!INT: MgmtEth0/RSP0/CPU0/0         admin-down  admin-down  1514   Half  10     auton   -
+!INT: MgmtEth0/RSP0/CPU0/1         admin-down  admin-down  1514   Half  10     auton   -
+!INT: MgmtEth0/RSP1/CPU0/0         admin-down  admin-down  1514   Half  10     auton   -
+!INT: MgmtEth0/RSP1/CPU0/1         admin-down  admin-down  1514   Half  10     auton   -
+!INT: TenGigE0/0/0/0               up          up          9216   Full  10000  force   -
+!INT: TenGigE0/0/0/1               up          up          9216   Full  10000  force   -
+!INT: TenGigE0/0/0/2               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/0/0/3               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/0/0/4               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/0/0/5               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/0/0/6               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/0/0/7               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/1/0/0               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/1/0/1               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/1/0/2               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/1/0/3               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/1/0/4               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/1/0/5               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/1/0/6               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/1/0/7               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/2/0/0               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/2/0/1               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/2/0/2               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/2/0/3               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/2/0/4               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/2/0/5               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/2/0/6               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/2/0/7               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/0               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/1               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/2               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/3               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/4               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/5               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/6               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/7               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/8               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/9               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/10              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/11              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/12              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/13              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/14              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/15              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/16              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/17              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/18              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/19              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/20              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/21              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/22              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/23              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/24              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/25              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/26              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/27              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/28              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/29              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/30              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/31              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/32              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/33              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/34              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/3/0/35              admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/6/0/0               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/6/0/1               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/6/0/2               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/6/0/3               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/6/0/4               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/6/0/5               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/6/0/6               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/6/0/7               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/7/0/0               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/7/0/1               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/7/0/2               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/7/0/3               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/7/0/4               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/7/0/5               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/7/0/6               admin-down  admin-down  1514   Full  10000  force   -
+!INT: TenGigE0/7/0/7               admin-down  admin-down  1514   Full  10000  force   -
+!
+!INT-IPMTU: Loopback0                    1500 
+!INT-IPMTU: Loopback1                    1500 
+!INT-IPMTU: MgmtEth0/RSP0/CPU0/0         1500 
+!INT-IPMTU: MgmtEth0/RSP1/CPU0/0         1500 
+!INT-IPMTU: TenGigE0/0/0/0               9202 
+!INT-IPMTU: TenGigE0/0/0/1               9202 
+!
+!
+!INT-CLNS: TenGigE0/0/0/0               Enabled     9199   -
+!INT-CLNS: TenGigE0/0/0/1               Enabled     9199   -
+!
+!
+config-register 0x2102
+hostname ccr21.dev04
+banner motd ^
+Cogent Communications   (ccr21.dev04.atlas.cogentco.com)
+Unauthorized Access is Prohibited
+
+insert something clever here..
+^
+logging trap informational
+logging console informational
+logging monitor debugging
+logging buffered 100000000
+logging facility local3
+logging 66.28.3.132 vrf default
+logging 66.28.3.252 vrf default
+logging 66.250.251.228 vrf default
+logging 66.250.251.232 vrf default
+logging 66.250.251.245 vrf default
+logging source-interface Loopback0
+service timestamps log datetime msec
+service timestamps debug datetime msec
+logging events link-status software-interfaces
+tftp vrf default ipv4 server homedir harddisk:
+telnet vrf default ipv4 server max-servers 10
+domain name atlas.cogentco.com
+domain list atlas.cogentco.com
+domain list hades.cogentco.com
+domain list sys.cogentco.com
+domain list dns.cogentco.com
+domain list ip.cogentco.com
+domain list cogentco.com
+domain name-server 66.28.0.45
+domain name-server 66.28.0.61
+usergroup ipeng
+ taskgroup root-system
+!
+usergroup fullaccess
+ taskgroup root-system
+!
+tacacs source-interface Loopback0 vrf default
+tacacs-server host 66.28.3.131 port 49
+ key 7 01425256585E525C744D4F59185D14430A5B527A787C
+!
+tacacs-server host 66.28.3.10 port 49
+ key 7 01425256585E525C744D4F59185D14430A5B527A787C
+!
+tacacs-server host 66.28.3.194 port 49
+ key 7 01425256585E525C744D4F59185D14430A5B527A787C
+!
+aaa accounting commands default stop-only group tacacs+
+aaa authentication login default group tacacs+ local
+cdp
+tcp mss 4386
+tcp path-mtu-discovery
+line console
+ exec-timeout 0 0
+!
+line default
+ password 7 070D3343450C1745
+ accounting commands default
+ login authentication default
+ exec-timeout 180 0
+ access-class ingress 2000
+ transport input ssh telnet
+ transport preferred ssh
+!
+vty-pool default 0 8
+snmp-server ifmib ifalias long
+snmp-server ifindex persist
+snmp-server engineID local 00000009020000024A9A3800
+snmp-server host 66.250.251.228 traps 0000000902000002163DDEA0
+snmp-server host 66.250.251.232 traps 0000000902000002163DDEA0
+snmp-server host 66.250.251.245 traps 0000000902000002163DDEA0
+snmp-server host 149.127.109.2 traps 0000000902000002163DDEA0
+snmp-server view mib2 iso included
+snmp-server community 0000000902000002163DDEA0 view v1default RO 15
+snmp-server community 56d926a55c0ec9b9423d2f65c86f4783 RO 16
+snmp-server community b44d0493382900262b762f63dee7610e view mib2 RO 15
+snmp-server community d0e45d39667afa5d5bd2 RO 15
+snmp-server contact Cogent Communications (noc@cogentco.com)
+snmp-server location (dev04)
+snmp-server trap-source Loopback0
+ntp
+ server 10.30.71.114
+ server 10.30.71.122
+ server 10.30.71.194
+ server 10.30.71.250
+ source Loopback0
+ update-calendar
+!
+alias clns show isis topology
+alias ipint show ip interface brief
+alias sid show interfaces description
+rcp client username ipeng
+rcp client source-interface Loopback0
+key chain CCOIKEY
+ key 0
+  key-string password 045853550E701A1B5B4D5D57
+ !
+!
+control-plane
+ management-plane
+  inband
+   interface all
+    allow SSH peer
+     address ipv4 66.250.251.240
+     address ipv4 172.28.172.28
+     address ipv4 10.3.0.0/20
+     address ipv4 10.7.240.0/20
+     address ipv4 10.21.16.0/24
+     address ipv4 10.28.0.0/16
+     address ipv4 10.30.0.0/16
+     address ipv4 10.33.0.0/16
+     address ipv4 10.34.28.0/24
+     address ipv4 38.19.1.0/24
+     address ipv4 38.20.32.0/21
+     address ipv4 38.100.53.0/28
+     address ipv4 38.112.32.0/21
+     address ipv4 38.184.189.0/25
+     address ipv4 38.200.193.0/24
+     address ipv4 38.223.237.0/24
+     address ipv4 66.28.0.0/21
+     address ipv4 66.28.16.0/24
+     address ipv4 66.28.20.24/30
+     address ipv4 66.28.64.0/22
+     address ipv4 66.250.8.0/21
+     address ipv4 66.250.24.0/22
+     address ipv4 80.91.67.48/28
+     address ipv4 128.107.132.0/23
+     address ipv4 130.117.0.0/22
+     address ipv4 130.117.112.136/29
+     address ipv4 136.161.0.0/16
+     address ipv4 149.127.109.0/24
+     address ipv4 154.54.0.0/16
+     address ipv4 172.28.1.0/24
+     address ipv4 172.29.0.0/24
+     address ipv4 172.30.0.0/16
+     address ipv4 192.168.168.0/22
+     address ipv4 206.5.12.0/22
+     address ipv4 212.20.150.0/23
+    !
+    allow SNMP peer
+     address ipv4 66.28.0.238
+     address ipv4 66.28.3.14
+     address ipv4 66.28.3.247
+     address ipv4 66.28.3.251
+     address ipv4 66.28.3.252
+     address ipv4 66.250.251.228
+     address ipv4 66.250.251.232
+     address ipv4 66.250.251.240
+     address ipv4 66.250.251.245
+     address ipv4 80.245.32.75
+     address ipv4 130.117.19.66
+     address ipv4 66.250.255.208/28
+     address ipv4 80.245.32.128/28
+    !
+    allow Telnet peer
+     address ipv4 172.28.172.28
+     address ipv4 10.3.0.0/20
+     address ipv4 10.7.240.0/20
+     address ipv4 10.21.16.0/24
+     address ipv4 10.28.0.0/16
+     address ipv4 10.30.0.0/16
+     address ipv4 10.33.0.0/16
+     address ipv4 10.34.28.0/24
+     address ipv4 38.19.1.0/24
+     address ipv4 38.20.32.0/21
+     address ipv4 38.100.53.0/28
+     address ipv4 38.112.32.0/21
+     address ipv4 38.184.189.0/25
+     address ipv4 38.200.193.0/24
+     address ipv4 38.223.237.0/24
+     address ipv4 66.28.0.0/21
+     address ipv4 66.28.16.0/24
+     address ipv4 66.28.20.24/30
+     address ipv4 66.28.64.0/22
+     address ipv4 66.250.8.0/21
+     address ipv4 66.250.24.0/22
+     address ipv4 80.91.67.48/28
+     address ipv4 128.107.132.0/23
+     address ipv4 130.117.0.0/22
+     address ipv4 130.117.112.136/29
+     address ipv4 136.161.0.0/16
+     address ipv4 149.127.109.0/24
+     address ipv4 154.54.0.0/16
+     address ipv4 172.28.1.0/24
+     address ipv4 172.29.0.0/24
+     address ipv4 172.30.0.0/16
+     address ipv4 192.168.168.0/22
+     address ipv4 206.5.12.0/22
+     address ipv4 212.20.150.0/23
+    !
+   !
+  !
+ !
+!
+ipv4 access-list 1
+ 10 deny ipv4 any any
+!
+ipv4 access-list 2
+ 10 permit ipv4 66.28.16.0 0.0.0.255 any
+ 20 permit ipv4 206.5.14.0 0.0.0.255 any
+!
+ipv4 access-list 3
+ 10 permit ipv4 154.54.20.0 0.0.3.255 any
+ 20 permit ipv4 154.54.64.0 0.0.1.255 any
+!
+ipv4 access-list 5
+ 10 permit ipv4 any any
+!
+ipv4 access-list 15
+ 10 permit ipv4 host 66.28.3.14 any
+ 20 permit ipv4 host 66.28.3.252 any
+ 30 permit ipv4 host 130.117.19.66 any
+ 40 permit ipv4 host 66.28.3.247 any
+ 50 permit ipv4 host 66.250.251.232 any
+ 60 permit ipv4 host 66.28.0.238 any
+ 70 permit ipv4 host 80.245.32.75 any
+ 80 permit ipv4 host 66.250.251.228 any
+ 90 permit ipv4 host 66.250.251.240 any
+ 100 permit ipv4 66.250.255.208 0.0.0.15 any
+ 110 permit ipv4 80.245.32.128 0.0.0.15 any
+!
+ipv4 access-list 16
+ 10 permit ipv4 host 66.28.3.251 any
+!
+ipv4 access-list 17
+ 10 permit ipv4 66.28.3.0 0.0.0.255 any
+!
+ipv4 access-list 18
+ 10 deny ipv4 38.28.1.0 0.0.0.255 any
+ 20 deny ipv4 38.28.4.0 0.0.0.255 any
+ 30 deny ipv4 66.28.1.0 0.0.0.255 any
+ 40 deny ipv4 66.28.2.0 0.0.0.255 any
+ 50 deny ipv4 66.250.0.0 0.0.1.255 any
+ 60 deny ipv4 66.250.2.0 0.0.0.255 any
+ 70 deny ipv4 66.250.24.0 0.0.3.255 any
+ 80 deny ipv4 154.54.4.0 0.0.0.255 any
+ 100 permit ipv4 any any
+!
+ipv4 access-list 101
+ 10 permit ipv4 10.3.0.0 0.0.15.255 any
+ 20 permit ipv4 10.21.16.0 0.0.0.255 any
+ 30 permit ipv4 10.24.0.0 0.3.255.255 any
+ 40 permit ipv4 10.28.0.0 0.0.255.255 any
+ 50 permit ipv4 10.30.0.0 0.0.255.255 any
+ 60 permit ipv4 10.33.0.0 0.0.255.255 any
+ 70 permit ipv4 10.34.28.0 0.0.0.255 any
+ 80 permit ipv4 38.19.1.0 0.0.0.255 any
+ 90 permit ipv4 38.100.53.0 0.0.0.15 any
+ 100 permit ipv4 38.184.189.0 0.0.0.127 any
+ 110 permit ipv4 38.200.193.0 0.0.0.255 any
+ 120 permit ipv4 38.223.237.0 0.0.0.255 any
+ 130 permit ipv4 66.28.0.0 0.0.7.255 any
+ 140 permit ipv4 66.28.20.24 0.0.0.3 any
+ 150 permit ipv4 66.250.250.0 0.0.1.255 any
+ 160 permit ipv4 66.250.255.208 0.0.0.15 any
+ 170 permit ipv4 80.91.67.48 0.0.0.15 any
+ 180 permit ipv4 80.245.32.0 0.0.0.255 any
+ 190 permit ipv4 130.117.19.64 0.0.0.7 any
+ 200 permit ipv4 130.117.112.136 0.0.0.7 any
+ 210 permit ipv4 130.117.254.0 0.0.0.255 any
+ 220 permit ipv4 149.127.13.0 0.0.0.255 any
+ 230 permit ipv4 149.127.109.0 0.0.0.255 any
+ 240 permit ipv4 154.54.0.0 0.0.255.255 any
+ 250 permit ipv4 host 172.28.172.28 any
+ 260 permit ipv4 172.29.0.0 0.0.0.255 any
+ 270 permit ipv4 172.30.0.0 0.0.255.255 any
+ 280 permit ipv4 192.168.128.0 0.0.31.255 any
+ 290 permit ipv4 192.168.168.0 0.0.3.255 any
+ 300 permit ipv4 212.20.150.0 0.0.1.255 any
+ 310 deny ipv4 any any
+!
+ipv4 access-list 110
+ 10 permit tcp any host 192.33.4.12 eq domain
+ 20 permit udp any host 192.33.4.12 eq domain
+ 30 permit ipv4 any host 192.5.5.241
+ 40 deny ipv4 10.0.0.0 0.255.255.255 any
+ 50 deny ipv4 any 10.0.0.0 0.255.255.255
+ 60 deny ipv4 38.19.1.0 0.0.0.255 any
+ 70 deny ipv4 any 38.19.1.0 0.0.0.255
+ 80 deny ipv4 38.20.32.0 0.0.31.255 any
+ 90 deny ipv4 any 38.20.32.0 0.0.31.255
+ 100 deny ipv4 38.28.1.0 0.0.0.255 any
+ 110 deny ipv4 any 38.28.1.0 0.0.0.255
+ 120 deny ipv4 38.112.32.0 0.0.7.255 any
+ 130 deny ipv4 any 38.112.32.0 0.0.7.255
+ 140 deny ipv4 66.28.1.0 0.0.0.255 any
+ 150 deny ipv4 any 66.28.1.0 0.0.0.255
+ 160 deny ipv4 66.28.2.0 0.0.0.255 any
+ 170 deny ipv4 any 66.28.2.0 0.0.0.255
+ 180 deny ipv4 66.28.4.0 0.0.3.255 any
+ 190 deny ipv4 any 66.28.4.0 0.0.3.255
+ 200 deny ipv4 66.28.64.0 0.0.3.255 any
+ 210 deny ipv4 any 66.28.64.0 0.0.3.255
+ 220 deny ipv4 66.250.0.0 0.0.1.255 any
+ 230 deny ipv4 any 66.250.0.0 0.0.1.255
+ 240 deny ipv4 66.250.2.0 0.0.0.255 any
+ 250 deny ipv4 any 66.250.2.0 0.0.0.255
+ 260 deny ipv4 66.250.8.0 0.0.7.255 any
+ 270 deny ipv4 any 66.250.8.0 0.0.7.255
+ 280 deny ipv4 66.250.24.0 0.0.3.255 any
+ 290 deny ipv4 any 66.250.24.0 0.0.3.255
+ 300 deny ipv4 130.117.0.0 0.0.3.255 any
+ 310 deny ipv4 any 130.117.0.0 0.0.3.255
+ 320 deny ipv4 154.54.0.0 0.0.7.255 any
+ 330 deny ipv4 any 154.54.0.0 0.0.7.255
+ 340 deny ipv4 172.16.0.0 0.15.255.255 any
+ 350 deny ipv4 any 172.16.0.0 0.15.255.255
+ 360 deny ipv4 192.168.0.0 0.0.255.255 any
+ 370 deny ipv4 any 192.168.0.0 0.0.255.255
+ 380 permit ipv4 any any
+!
+ipv4 access-list 2000
+ 10 permit tcp 10.3.0.0 0.0.15.255 any eq ssh
+ 20 permit tcp 10.3.0.0 0.0.15.255 any eq telnet
+ 30 permit tcp 10.7.240.0 0.0.15.255 any eq ssh
+ 40 permit tcp 10.7.240.0 0.0.15.255 any eq telnet
+ 50 permit tcp 10.21.16.0 0.0.0.255 any eq ssh
+ 60 permit tcp 10.21.16.0 0.0.0.255 any eq telnet
+ 70 permit tcp 10.28.0.0 0.0.255.255 any eq ssh
+ 80 permit tcp 10.28.0.0 0.0.255.255 any eq telnet
+ 90 permit tcp 10.30.0.0 0.0.255.255 any eq ssh
+ 100 permit tcp 10.30.0.0 0.0.255.255 any eq telnet
+ 110 permit tcp 10.33.0.0 0.0.255.255 any eq ssh
+ 120 permit tcp 10.33.0.0 0.0.255.255 any eq telnet
+ 130 permit tcp 10.34.28.0 0.0.0.255 any eq ssh
+ 140 permit tcp 10.34.28.0 0.0.0.255 any eq telnet
+ 150 permit tcp 38.19.1.0 0.0.0.255 any eq ssh
+ 160 permit tcp 38.19.1.0 0.0.0.255 any eq telnet
+ 170 permit tcp 38.20.32.0 0.0.31.255 any eq ssh
+ 180 permit tcp 38.20.32.0 0.0.31.255 any eq telnet
+ 190 permit tcp 38.20.64.0 0.0.31.255 any eq ssh
+ 200 permit tcp 38.20.64.0 0.0.31.255 any eq telnet
+ 210 permit tcp 38.100.53.0 0.0.0.15 any eq ssh
+ 220 permit tcp 38.100.53.0 0.0.0.15 any eq telnet
+ 230 permit tcp 38.112.32.0 0.0.7.255 any eq ssh
+ 240 permit tcp 38.112.32.0 0.0.7.255 any eq telnet
+ 250 permit tcp 38.184.189.0 0.0.0.127 any eq ssh
+ 260 permit tcp 38.184.189.0 0.0.0.127 any eq telnet
+ 270 permit tcp 38.200.193.0 0.0.0.255 any eq ssh
+ 280 permit tcp 38.200.193.0 0.0.0.255 any eq telnet
+ 290 permit tcp 38.223.237.0 0.0.0.255 any eq ssh
+ 300 permit tcp 38.223.237.0 0.0.0.255 any eq telnet
+ 310 permit tcp 66.28.0.0 0.0.7.255 any eq ssh
+ 320 permit tcp 66.28.0.0 0.0.7.255 any eq telnet
+ 330 permit tcp 66.28.20.24 0.0.0.3 any eq ssh
+ 340 permit tcp 66.28.20.24 0.0.0.3 any eq telnet
+ 350 permit tcp 66.28.64.0 0.0.3.255 any eq ssh
+ 360 permit tcp 66.28.64.0 0.0.3.255 any eq telnet
+ 370 permit tcp 66.250.8.0 0.0.7.255 any eq ssh
+ 380 permit tcp 66.250.8.0 0.0.7.255 any eq telnet
+ 390 permit tcp 66.250.24.0 0.0.3.255 any eq ssh
+ 400 permit tcp 66.250.24.0 0.0.3.255 any eq telnet
+ 410 permit tcp host 66.250.251.240 any eq ssh
+ 420 permit tcp host 66.250.251.240 any eq telnet
+ 430 permit tcp 80.91.67.48 0.0.0.15 any eq ssh
+ 440 permit tcp 80.91.67.48 0.0.0.15 any eq telnet
+ 450 permit tcp 130.117.0.0 0.0.3.255 any eq ssh
+ 460 permit tcp 130.117.0.0 0.0.3.255 any eq telnet
+ 470 permit tcp 130.117.112.136 0.0.0.7 any eq ssh
+ 480 permit tcp 130.117.112.136 0.0.0.7 any eq telnet
+ 490 permit tcp 136.161.0.0 0.0.255.255 any eq ssh
+ 500 permit tcp 136.161.0.0 0.0.255.255 any eq telnet
+ 510 permit tcp 149.127.109.0 0.0.0.255 any eq ssh
+ 520 permit tcp 149.127.109.0 0.0.0.255 any eq telnet
+ 530 permit tcp 154.54.0.0 0.0.255.255 any eq ssh
+ 540 permit tcp 154.54.0.0 0.0.255.255 any eq telnet
+ 550 permit tcp 172.28.1.0 0.0.0.255 any eq ssh
+ 560 permit tcp 172.28.1.0 0.0.0.255 any eq telnet
+ 570 permit tcp host 172.28.172.28 any eq ssh
+ 580 permit tcp host 172.28.172.28 any eq telnet
+ 590 permit tcp 172.29.0.0 0.0.0.255 any eq ssh
+ 600 permit tcp 172.29.0.0 0.0.0.255 any eq telnet
+ 610 permit tcp 172.30.0.0 0.0.255.255 any eq ssh
+ 620 permit tcp 172.30.0.0 0.0.255.255 any eq telnet
+ 630 permit tcp 192.168.168.0 0.0.3.255 any eq ssh
+ 640 permit tcp 192.168.168.0 0.0.3.255 any eq telnet
+ 650 permit tcp 212.20.150.0 0.0.1.255 any eq ssh
+ 660 permit tcp 212.20.150.0 0.0.1.255 any eq telnet
+ 670 permit tcp 66.28.16.0 0.0.0.255 any eq ssh
+ 680 permit tcp 66.28.16.0 0.0.0.255 any eq telnet
+ 690 permit tcp 206.5.12.0 0.0.3.255 any eq ssh
+ 700 permit tcp 206.5.12.0 0.0.3.255 any eq telnet
+ 704 permit tcp 128.107.132.0 0.0.1.255 any eq ssh
+ 706 permit tcp 128.107.132.0 0.0.1.255 any eq telnet
+ 710 deny ipv4 any any
+!
+ipv4 access-list loopip1
+ 10 permit ipv4 154.54.20.0 0.0.1.255 any
+!
+class-map match-all ALL-TRAFFIC-IN
+ match access-group ipv4 1 
+ end-class-map
+!
+class-map match-all ALL-TRAFFIC-OUT
+ match access-group ipv4 1 
+ end-class-map
+!
+flow exporter-map nf_collector_eu-east-ta
+ version v9
+ !
+ transport udp 9998
+ source Loopback0
+ destination 80.245.32.138
+!
+flow exporter-map nf_collector_eu-west-ta
+ version v9
+ !
+ transport udp 9998
+ source Loopback0
+ destination 80.245.32.130
+!
+flow exporter-map nf_collector_na-east-ta
+ version v9
+ !
+ transport udp 9998
+ source Loopback0
+ destination 66.250.255.218
+!
+flow exporter-map nf_collector_na-west-ta
+ version v9
+ !
+ transport udp 9998
+ source Loopback0
+ destination 66.250.255.210
+!
+flow exporter-map nf_collector_eu-east-core
+ version v9
+ !
+ transport udp 9995
+ source Loopback0
+ destination 80.245.32.138
+!
+flow exporter-map nf_collector_eu-east-cust
+ version v9
+ !
+ transport udp 9997
+ source Loopback0
+ destination 80.245.32.138
+!
+flow exporter-map nf_collector_eu-east-edge
+ version v9
+ !
+ transport udp 9999
+ source Loopback0
+ destination 80.245.32.138
+!
+flow exporter-map nf_collector_eu-east-peer
+ version v9
+ !
+ transport udp 9996
+ source Loopback0
+ destination 80.245.32.138
+!
+flow exporter-map nf_collector_eu-west-core
+ version v9
+ !
+ transport udp 9995
+ source Loopback0
+ destination 80.245.32.130
+!
+flow exporter-map nf_collector_eu-west-cust
+ version v9
+ !
+ transport udp 9997
+ source Loopback0
+ destination 80.245.32.130
+!
+flow exporter-map nf_collector_eu-west-edge
+ version v9
+ !
+ transport udp 9999
+ source Loopback0
+ destination 80.245.32.130
+!
+flow exporter-map nf_collector_eu-west-peer
+ version v9
+ !
+ transport udp 9996
+ source Loopback0
+ destination 80.245.32.130
+!
+flow exporter-map nf_collector_na-east-core
+ version v9
+ !
+ transport udp 9995
+ source Loopback0
+ destination 66.250.255.218
+!
+flow exporter-map nf_collector_na-east-cust
+ version v9
+ !
+ transport udp 9997
+ source Loopback0
+ destination 66.250.255.218
+!
+flow exporter-map nf_collector_na-east-edge
+ version v9
+ !
+ transport udp 9999
+ source Loopback0
+ destination 66.250.255.218
+!
+flow exporter-map nf_collector_na-east-peer
+ version v9
+ !
+ transport udp 9996
+ source Loopback0
+ destination 66.250.255.218
+!
+flow exporter-map nf_collector_na-west-core
+ version v9
+ !
+ transport udp 9995
+ source Loopback0
+ destination 66.250.255.210
+!
+flow exporter-map nf_collector_na-west-cust
+ version v9
+ !
+ transport udp 9997
+ source Loopback0
+ destination 66.250.255.210
+!
+flow exporter-map nf_collector_na-west-edge
+ version v9
+ !
+ transport udp 9999
+ source Loopback0
+ destination 66.250.255.210
+!
+flow exporter-map nf_collector_na-west-peer
+ version v9
+ !
+ transport udp 9996
+ source Loopback0
+ destination 66.250.255.210
+!
+flow monitor-map nf_ta
+ record ipv4
+ exporter nf_collector_na-east-ta
+ exporter nf_collector_na-west-ta
+!
+flow monitor-map nf_core
+ record ipv4
+ exporter nf_collector_na-east-core
+ exporter nf_collector_na-west-core
+!
+flow monitor-map nf_cust
+ record ipv4
+ exporter nf_collector_na-east-cust
+ exporter nf_collector_na-west-cust
+!
+flow monitor-map nf_edge
+ record ipv4
+ exporter nf_collector_na-east-edge
+ exporter nf_collector_na-west-edge
+!
+flow monitor-map nf_peer
+ record ipv4
+ exporter nf_collector_na-east-peer
+ exporter nf_collector_na-west-peer
+!
+sampler-map 1in10k
+ random 1 out-of 10000
+!
+interface Loopback0
+ description MGNT
+ ipv4 address 154.54.66.96 255.255.255.255
+!
+interface Loopback1
+ description MGNT
+ ipv4 address 154.54.67.96 255.255.255.255
+ ipv6 address 2001:550::1096/128
+!
+interface Loopback6447
+ description PEER PRIVATE BGP ^Routeviews-6447-DEV04^ ID:1-109267246
+ ipv6 address 2001:550:4::43/128
+!
+interface MgmtEth0/RSP0/CPU0/0
+ description DCN FE to fa0/2-dcn01.sjc01
+ cdp
+ ipv4 address 10.28.30.58 255.255.255.252
+ shutdown
+!
+interface MgmtEth0/RSP0/CPU0/1
+ shutdown
+!
+interface MgmtEth0/RSP1/CPU0/0
+ description DCN FE to fa0/3-dcn01.sjc01
+ ipv4 address 10.28.30.62 255.255.255.252
+ shutdown
+!
+interface MgmtEth0/RSP1/CPU0/1
+ shutdown
+!
+interface TenGigE0/0/0/0
+ description CORE 10GE-L to te0/5/0/7-ccr21.sjc01
+ cdp
+ mtu 9216
+ ipv4 address 154.54.81.142 255.255.255.252
+ load-interval 60
+ flow ipv4 monitor nf_core sampler 1in10k ingress
+ flow ipv4 monitor nf_core sampler 1in10k egress
+!
+interface TenGigE0/0/0/1
+ description CORE 10GE-L to te0/5/0/7-ccr22.sjc01
+ cdp
+ mtu 9216
+ ipv4 address 154.54.0.46 255.255.255.252
+ load-interval 60
+ flow ipv4 monitor nf_core sampler 1in10k ingress
+ flow ipv4 monitor nf_core sampler 1in10k egress
+!
+interface TenGigE0/0/0/2
+ description test
+ shutdown
+!
+interface TenGigE0/0/0/3
+ shutdown
+!
+interface TenGigE0/0/0/4
+ shutdown
+!
+interface TenGigE0/0/0/5
+ shutdown
+!
+interface TenGigE0/0/0/6
+ shutdown
+!
+interface TenGigE0/0/0/7
+ shutdown
+!
+interface TenGigE0/1/0/0
+ shutdown
+!
+interface TenGigE0/1/0/1
+ shutdown
+!
+interface TenGigE0/1/0/2
+ shutdown
+!
+interface TenGigE0/1/0/3
+ shutdown
+!
+interface TenGigE0/1/0/4
+ shutdown
+!
+interface TenGigE0/1/0/5
+ shutdown
+!
+interface TenGigE0/1/0/6
+ shutdown
+!
+interface TenGigE0/1/0/7
+ shutdown
+!
+interface TenGigE0/2/0/0
+ shutdown
+!
+interface TenGigE0/2/0/1
+ shutdown
+!
+interface TenGigE0/2/0/2
+ shutdown
+!
+interface TenGigE0/2/0/3
+ shutdown
+!
+interface TenGigE0/2/0/4
+ shutdown
+!
+interface TenGigE0/2/0/5
+ shutdown
+!
+interface TenGigE0/2/0/6
+ shutdown
+!
+interface TenGigE0/2/0/7
+ shutdown
+!
+interface TenGigE0/3/0/0
+ shutdown
+!
+interface TenGigE0/3/0/1
+ shutdown
+!
+interface TenGigE0/3/0/2
+ shutdown
+!
+interface TenGigE0/3/0/3
+ shutdown
+!
+interface TenGigE0/3/0/4
+ shutdown
+!
+interface TenGigE0/3/0/5
+ shutdown
+!
+interface TenGigE0/3/0/6
+ shutdown
+!
+interface TenGigE0/3/0/7
+ shutdown
+!
+interface TenGigE0/3/0/8
+ shutdown
+!
+interface TenGigE0/3/0/9
+ shutdown
+!
+interface TenGigE0/3/0/10
+ shutdown
+!
+interface TenGigE0/3/0/11
+ shutdown
+!
+interface TenGigE0/3/0/12
+ shutdown
+!
+interface TenGigE0/3/0/13
+ shutdown
+!
+interface TenGigE0/3/0/14
+ shutdown
+!
+interface TenGigE0/3/0/15
+ shutdown
+!
+interface TenGigE0/3/0/16
+ shutdown
+!
+interface TenGigE0/3/0/17
+ shutdown
+!
+interface TenGigE0/3/0/18
+ shutdown
+!
+interface TenGigE0/3/0/19
+ shutdown
+!
+interface TenGigE0/3/0/20
+ shutdown
+!
+interface TenGigE0/3/0/21
+ shutdown
+!
+interface TenGigE0/3/0/22
+ shutdown
+!
+interface TenGigE0/3/0/23
+ shutdown
+!
+interface TenGigE0/3/0/24
+ shutdown
+!
+interface TenGigE0/3/0/25
+ shutdown
+!
+interface TenGigE0/3/0/26
+ shutdown
+!
+interface TenGigE0/3/0/27
+ shutdown
+!
+interface TenGigE0/3/0/28
+ shutdown
+!
+interface TenGigE0/3/0/29
+ shutdown
+!
+interface TenGigE0/3/0/30
+ shutdown
+!
+interface TenGigE0/3/0/31
+ shutdown
+!
+interface TenGigE0/3/0/32
+ shutdown
+!
+interface TenGigE0/3/0/33
+ shutdown
+!
+interface TenGigE0/3/0/34
+ shutdown
+!
+interface TenGigE0/3/0/35
+ shutdown
+!
+interface TenGigE0/6/0/0
+ shutdown
+!
+interface TenGigE0/6/0/1
+ shutdown
+!
+interface TenGigE0/6/0/2
+ shutdown
+!
+interface TenGigE0/6/0/3
+ shutdown
+!
+interface TenGigE0/6/0/4
+ shutdown
+!
+interface TenGigE0/6/0/5
+ shutdown
+!
+interface TenGigE0/6/0/6
+ shutdown
+!
+interface TenGigE0/6/0/7
+ shutdown
+!
+interface TenGigE0/7/0/0
+ shutdown
+!
+interface TenGigE0/7/0/1
+ shutdown
+!
+interface TenGigE0/7/0/2
+ shutdown
+!
+interface TenGigE0/7/0/3
+ shutdown
+!
+interface TenGigE0/7/0/4
+ shutdown
+!
+interface TenGigE0/7/0/5
+ shutdown
+!
+interface TenGigE0/7/0/6
+ shutdown
+!
+interface TenGigE0/7/0/7
+ shutdown
+!
+controller dwdm0/0/0/7
+ admin-state out-of-service
+!
+interface preconfigure TenGigE0/5/0/0
+ shutdown
+!
+interface preconfigure TenGigE0/5/0/1
+ shutdown
+!
+interface preconfigure TenGigE0/5/0/2
+ shutdown
+!
+interface preconfigure TenGigE0/5/0/3
+ shutdown
+!
+interface preconfigure TenGigE0/5/0/4
+ shutdown
+!
+interface preconfigure TenGigE0/5/0/5
+ shutdown
+!
+interface preconfigure TenGigE0/5/0/6
+ shutdown
+!
+interface preconfigure TenGigE0/5/0/7
+ shutdown
+!
+policy-global
+  countrycomm '22013',
+  customercomm '21001',
+  peercomm '21000'
+end-global
+!
+prefix-set default
+  0.0.0.0/0
+end-set
+!
+prefix-set empty-set
+end-set
+!
+prefix-set permit-32
+  0.0.0.0/0 ge 32
+end-set
+!
+prefix-set permit-ep
+  192.41.177.0/24 le 32,
+  192.157.69.0/24 le 32,
+  198.32.128.0/17 le 32,
+  206.220.242.0/23 le 32
+end-set
+!
+prefix-set permit-bad
+  0.0.0.0/0,
+  0.0.0.0/32,
+  127.0.0.0/8 le 32,
+  128.0.0.0/16 le 32,
+  191.255.0.0/16 le 32,
+  192.0.2.0/24 le 32,
+  223.255.255.0/24 le 32,
+  224.0.0.0/3 le 32
+end-set
+!
+prefix-set permit-rfc1918
+  10.0.0.0/8 le 32,
+  172.16.0.0/12 le 32,
+  192.168.0.0/16 le 32
+end-set
+!
+prefix-set permit-25-to-32
+  0.0.0.0/0 ge 25
+end-set
+!
+prefix-set permit-backbone
+  66.28.1.0/24,
+  38.28.1.0/24,
+  206.5.14.0/24
+end-set
+!
+prefix-set permit-64-to-128
+  ::/0 ge 64
+end-set
+!
+prefix-set permit-supernets
+  38.0.0.0/8,
+  64.17.0.0/18,
+  66.28.0.0/16,
+  66.132.0.0/17,
+  66.250.0.0/16,
+  136.161.0.0/16,
+  149.2.0.0/16,
+  149.33.0.0/16,
+  149.120.0.0/16,
+  149.127.0.0/16,
+  154.6.0.0/15,
+  154.48.0.0/12,
+  192.246.0.0/16,
+  199.29.0.0/16,
+  199.98.0.0/15,
+  199.100.0.0/16,
+  204.4.0.0/14,
+  204.217.0.0/16,
+  204.240.0.0/14,
+  205.215.0.0/18,
+  206.0.0.0/13,
+  206.119.0.0/16,
+  206.183.224.0/19,
+  206.232.0.0/14,
+  206.236.0.0/15,
+  207.31.64.0/18,
+  207.60.0.0/16,
+  207.153.64.0/18,
+  209.41.192.0/18,
+  209.61.0.0/17,
+  209.115.0.0/17,
+  209.146.0.0/17,
+  216.28.0.0/15,
+  216.168.64.0/19
+end-set
+!
+prefix-set permit-pop-subnets
+  10.32.0.0/16 le 32
+end-set
+!
+prefix-set permit-bgp-loopback
+  10.31.127.0/24 le 32,
+  66.28.22.0/24 le 32,
+  66.250.3.0/24 le 32,
+  66.250.252.0/22 le 32,
+  38.101.160.0/22 le 32,
+  38.103.64.0/20 le 32
+end-set
+!
+prefix-set permit-subaggregate
+  38.0.0.0/8 le 32,
+  64.17.0.0/18 le 32,
+  66.28.0.0/16 le 32,
+  66.132.0.0/17 le 32,
+  66.250.0.0/16 le 32,
+  136.161.0.0/16 le 32,
+  149.2.0.0/16 le 32,
+  149.33.0.0/16 le 32,
+  149.120.0.0/16 le 32,
+  149.127.0.0/16 le 32,
+  154.6.0.0/15 le 32,
+  154.48.0.0/12 le 32,
+  192.246.0.0/16 le 32,
+  199.29.0.0/16 le 32,
+  199.98.0.0/15 le 32,
+  199.100.0.0/16 le 32,
+  204.4.0.0/14 le 32,
+  204.217.0.0/16 le 32,
+  204.240.0.0/14 le 32,
+  205.215.0.0/18 le 32,
+  206.0.0.0/13 le 32,
+  206.119.0.0/16 le 32,
+  206.183.224.0/19 le 32,
+  206.232.0.0/14 le 32,
+  206.236.0.0/15 le 32,
+  207.31.64.0/18 le 32,
+  207.60.0.0/16 le 32,
+  207.153.64.0/18 le 32,
+  209.41.192.0/18 le 32,
+  209.61.0.0/17 le 32,
+  209.115.0.0/17 le 32,
+  209.146.0.0/17 le 32,
+  216.28.0.0/15 le 32,
+  216.168.64.0/19 le 32
+end-set
+!
+prefix-set v6-permit-subaggregate
+  2001:550::/32 le 128,
+  2001:978::/32 le 128
+end-set
+!
+as-path-set 15
+  ios-regex '_1_',
+  ios-regex '_209_',
+  ios-regex '_701_',
+  ios-regex '_702_',
+  ios-regex '_1239_',
+  ios-regex '_1299_',
+  ios-regex '_1668_',
+  ios-regex '_2548_',
+  ios-regex '_2914_',
+  ios-regex '_3320_',
+  ios-regex '_3356_',
+  ios-regex '_3549_',
+  ios-regex '_3561_',
+  ios-regex '_5400_',
+  ios-regex '_5511_',
+  ios-regex '_6461_',
+  ios-regex '_7018_',
+  ios-regex '_7132_',
+  ios-regex '_7911_'
+end-set
+!
+community-set comm_10
+  174:990,
+  174:991,
+  174:971,
+  174:3000
+end-set
+!
+community-set comm_11
+  174:3001
+end-set
+!
+community-set comm_12
+  174:3002
+end-set
+!
+community-set comm_13
+  174:3003
+end-set
+!
+community-set comm_20
+  174:970
+end-set
+!
+community-set comm_21
+  174:10
+end-set
+!
+community-set comm_22
+  174:70
+end-set
+!
+community-set comm_23
+  174:120
+end-set
+!
+community-set comm_24
+  174:125
+end-set
+!
+community-set comm_25
+  174:135
+end-set
+!
+community-set comm_26
+  174:140
+end-set
+!
+community-set comm_31
+  174:990
+end-set
+!
+community-set comm_32
+  174:20999
+end-set
+!
+community-set comm_33
+  174:20999,
+  174:20121
+end-set
+!
+community-set comm_34
+  174:20666
+end-set
+!
+community-set comm_35
+  174:20666,
+  174:20121
+end-set
+!
+community-set comm_61
+  174:990,
+  174:20122,
+  174:20998,
+  174:21001,
+  174:22013
+end-set
+!
+community-set comm_62
+  174:990,
+  174:20122,
+  174:21000,
+  174:22013
+end-set
+!
+community-set comm_63
+  174:990,
+  174:20121,
+  174:21000,
+  174:22013
+end-set
+!
+community-set comm_64
+  174:990,
+  174:21000,
+  174:22013
+end-set
+!
+community-set comm_65
+  174:10000
+end-set
+!
+community-set comm_90
+  174:20997
+end-set
+!
+community-set comm_91
+  174:20122
+end-set
+!
+community-set comm_93
+  174:20996,
+  174:20998
+end-set
+!
+community-set comm_100
+  174:10,
+  174:70,
+  174:120,
+  174:125,
+  174:135,
+  174:140,
+  174:970,
+  174:971,
+  174:975,
+  174:980,
+  174:981,
+  174:985,
+  174:990,
+  174:991,
+  174:[3000..3599]
+end-set
+!
+community-set comm_150
+  174:20999,
+  174:21001,
+  174:22013
+end-set
+!
+community-set comm_151
+  174:20121,
+  174:21001,
+  174:22013
+end-set
+!
+community-set comm_152
+  174:990,
+  174:20911,
+  174:21001,
+  174:22013
+end-set
+!
+community-set comm_153
+  174:20122,
+  174:21001,
+  174:22013
+end-set
+!
+community-set comm-peer-in
+  174:20666,
+  174:21000,
+  174:22013
+end-set
+!
+community-set comm-customer-in
+  174:20999,
+  174:21001,
+  174:22013
+end-set
+!
+community-set comm-customer-out-delete
+  174:21000,
+  174:21001,
+  174:21100,
+  174:21101,
+  174:[22000..22999]
+end-set
+!
+community-set comm-private-customer-in
+  174:990,
+  174:20999,
+  174:21001
+end-set
+!
+route-policy test
+  if tag eq 999 then
+    set community (174:$customercomm, 174:$countrycomm, 174:20999)
+  endif
+end-policy
+!
+route-policy pop-in
+  if community matches-any comm_90 then
+    set next-hop peer-address
+  endif
+  pass
+end-policy
+!
+route-policy peer-in
+  if destination in permit-bad or destination in permit-rfc1918 or destination in permit-supernets or destination in permit-25-to-32 then
+    drop
+  endif
+  set med 4294967294
+  set local-preference 100
+  set community comm-peer-in
+  pass
+end-policy
+!
+route-policy pop-out
+  set community comm_65 additive
+end-policy
+!
+route-policy deny-all
+  drop
+end-policy
+!
+route-policy peer-out
+  apply peer-out-deny
+  apply peer-out-accept
+end-policy
+!
+route-policy v6-rr-out
+  set community comm_65 additive
+end-policy
+!
+route-policy static-bgp
+  if tag eq 992 then
+    drop
+  elseif tag eq 999 then
+    set community comm_150
+  elseif tag eq 121 then
+    set community comm_151
+  elseif destination in permit-32 then
+    set origin igp
+    set community comm_152
+  elseif destination in permit-pop-subnets then
+    set origin igp
+    set community comm_153
+  elseif destination in permit-subaggregate then
+    set origin igp
+    set community comm_151
+  else
+    set origin igp
+    set community comm_150
+  endif
+end-policy
+!
+route-policy v6-peer-in
+  set med 4294967294
+  set local-preference 100
+  set community comm-peer-in
+  pass
+end-policy
+!
+route-policy internal-in
+  if community matches-any comm_90 then
+    delete community in comm_90
+    set next-hop peer-address
+  else
+    pass
+  endif
+end-policy
+!
+route-policy v6-peer-out
+  if destination in permit-64-to-128 then
+    drop
+  endif
+  if as-path in 15 then
+    drop
+  endif
+  if community matches-any comm_10 then
+    drop
+  endif
+  if community matches-any comm_11 then
+    set med 0
+    prepend as-path 174
+    pass
+  endif
+  if community matches-any comm_12 then
+    set med 0
+    prepend as-path 174 2
+    pass
+  endif
+  if community matches-any comm_13 then
+    set med 0
+    prepend as-path 174 3
+    pass
+  endif
+  if community matches-any comm_32 then
+    set med 0
+    pass
+  endif
+end-policy
+!
+route-policy blackhole-in
+  set local-preference 150
+  set next-hop 10.255.255.255
+end-policy
+!
+route-policy internal-out
+  if community matches-any comm_91 then
+    drop
+  else
+    set community comm_65 additive
+  endif
+end-policy
+!
+route-policy connected-bgp
+  if destination in permit-bgp-loopback then
+    set community comm_61
+  elseif destination in permit-pop-subnets then
+    set origin igp
+    set community comm_62
+  elseif destination in permit-supernets then
+    drop
+  elseif destination in permit-subaggregate then
+    set origin igp
+    set community comm_63
+  else
+    set origin igp
+    set community comm_64
+    pass
+  endif
+end-policy
+!
+route-policy peer-out-deny
+  if destination in permit-25-to-32 or destination in permit-bad or destination in permit-ep or destination in permit-rfc1918 then
+    drop
+  endif
+  if as-path in 15 then
+    drop
+  endif
+  if community matches-any comm_10 then
+    drop
+  endif
+end-policy
+!
+route-policy v6-static-bgp
+  if destination in v6-permit-subaggregate then
+    set origin igp
+    set community comm_151
+  else
+    set origin igp
+    set community comm_150
+  endif
+end-policy
+!
+route-policy cogent-customer($customer, $drop)
+  if destination in permit-bad or destination in permit-ep or destination in permit-rfc1918 or destination in permit-supernets then
+    drop
+  endif
+  #block major peer routes from customers
+  if as-path in 15 then
+    drop
+  endif
+  #block route from TA
+  if community matches-any comm_20 then
+    drop
+  endif
+  #allow for customer specific drop prefix-sets
+  if destination in $drop then
+    drop
+  else
+    pass
+  endif
+  #only allow cust prefix-set
+  if destination in $customer then
+    pass
+  else
+    drop
+  endif
+  #set local-preference
+  set local-preference 130
+  delete community not in comm_100
+  set community comm-customer-in additive
+  if community matches-any (174:10) then
+    set local-preference 10
+  elseif community matches-any (174:70) then
+    set local-preference 70
+  elseif community matches-any (174:120) then
+    set local-preference 120
+  elseif community matches-any (174:125) then
+    set local-preference 125
+  elseif community matches-any (174:135) then
+    set local-preference 135
+  elseif community matches-any (174:140) then
+    set local-preference 140
+  endif
+end-policy
+!
+route-policy partial-pop-out
+  if community matches-every comm_93 then
+    pass
+  else
+    drop
+  endif
+end-policy
+!
+route-policy peer-out-accept
+  if community matches-any comm_11 then
+    set med 0
+    prepend as-path 174
+    done
+  endif
+  if community matches-any comm_12 then
+    set med 0
+    prepend as-path 174 2
+    done
+  endif
+  if community matches-any comm_13 then
+    set med 0
+    prepend as-path 174 3
+    done
+  endif
+  if community matches-any comm_32 then
+    set med 0
+    done
+  endif
+end-policy
+!
+route-policy v6-connected-bgp
+  if destination in v6-permit-subaggregate then
+    set origin igp
+    set community comm_63
+  else
+    set origin igp
+    set community comm_64
+    pass
+  endif
+end-policy
+!
+route-policy send-default-peer
+  if destination in default then
+    pass
+  else
+    drop
+  endif
+end-policy
+!
+route-policy send-transit-peer
+  if destination in permit-25-to-32 or destination in permit-bad or destination in permit-rfc1918 then
+    drop
+  endif
+  if community matches-any comm_31 then
+    drop
+  endif
+  if community matches-any comm_34 or community matches-any comm_32 then
+    set med igp-cost
+    delete community not in comm-customer-out-delete
+    pass
+  endif
+end-policy
+!
+route-policy v6-cogent-customer($customer)
+  if destination in permit-64-to-128 then
+    drop
+  endif
+  if as-path in 15 then
+    drop
+  endif
+  if community matches-any comm_20 then
+    drop
+  endif
+  if destination in $customer then
+    pass
+  else
+    drop
+  endif
+  if community matches-any (174:10) then
+    set local-preference 10
+    delete community not in comm_100
+    set community comm-customer-in additive
+  endif
+  if community matches-any (174:70) then
+    set local-preference 70
+    delete community not in comm_100
+    set community comm-customer-in additive
+  endif
+  if community matches-any (174:120) then
+    set local-preference 120
+    delete community not in comm_100
+    set community comm-customer-in additive
+  endif
+  if community matches-any (174:125) then
+    set local-preference 125
+    delete community not in comm_100
+    set community comm-customer-in additive
+  endif
+  if community matches-any (174:135) then
+    set local-preference 135
+    delete community not in comm_100
+    set community comm-customer-in additive
+  endif
+  if community matches-any (174:140) then
+    set local-preference 140
+    delete community not in comm_100
+    set community comm-customer-in additive
+  endif
+  set local-preference 130
+  delete community not in comm_100
+  set community comm-customer-in additive
+end-policy
+!
+route-policy send-nontransit-peer
+  if destination in permit-25-to-32 or destination in permit-bad or destination in permit-rfc1918 then
+    drop
+  endif
+  if community matches-any comm_31 then
+    drop
+  endif
+  if community matches-any comm_32 then
+    set med igp-cost
+    delete community not in comm-customer-out-delete
+    pass
+  endif
+end-policy
+!
+route-policy v6-send-transit-peer
+  if destination in permit-64-to-128 then
+    drop
+  endif
+  if community matches-any comm_31 then
+    drop
+  endif
+  if community matches-any comm_34 or community matches-any comm_32 then
+    set med igp-cost
+    delete community not in comm-customer-out-delete
+    pass
+  endif
+end-policy
+!
+router isis COGENT
+ set-overload-bit on-startup wait-for-bgp
+ is-type level-2-only
+ net 47.0023.0001.0000.0000.0002.0001.1540.5406.6096.00
+ log adjacency changes
+ lsp-gen-interval maximum-wait 5000 initial-wait 1 secondary-wait 100
+ address-family ipv4 unicast
+  metric-style wide
+  mpls traffic-eng level-2-only
+  mpls traffic-eng router-id Loopback0
+  spf-interval secondary-wait 100
+  maximum-paths 32
+  distance 15
+  mpls ldp auto-config
+ !
+ interface Loopback0
+  passive
+  circuit-type level-2-only
+  address-family ipv4 unicast
+  !
+ !
+ interface Loopback1
+  passive
+  circuit-type level-2-only
+  address-family ipv4 unicast
+  !
+ !
+ interface TenGigE0/0/0/0
+  circuit-type level-2-only
+  bfd fast-detect ipv4
+  point-to-point
+  hello-interval 2
+  hello-password text encrypted 00273C5F21753F
+  hello-multiplier 8
+  address-family ipv4 unicast
+   fast-reroute per-prefix
+   metric 201010
+  !
+ !
+ interface TenGigE0/0/0/1
+  circuit-type level-2-only
+  bfd fast-detect ipv4
+  point-to-point
+  hello-interval 2
+  hello-password text encrypted 00273C5F21753F
+  hello-multiplier 8
+  address-family ipv4 unicast
+   fast-reroute per-prefix
+   metric 201010
+  !
+ !
+!
+router ospf 174
+ log adjacency changes
+ router-id 154.54.66.96
+ default-information originate always
+ distance 16
+ address-family ipv4 unicast
+ area 0
+  authentication-key encrypted 0528292804627A
+  authentication
+  network point-to-point
+  dead-interval 10
+  hello-interval 3
+  interface Loopback0
+   passive enable
+  !
+ !
+!
+router bgp 174
+ bgp router-id 154.54.66.96
+ bgp bestpath compare-routerid
+ address-family ipv4 unicast
+  bgp attribute-download
+  maximum-paths ebgp 8
+  maximum-paths ibgp 8
+  redistribute connected route-policy connected-bgp
+  redistribute static route-policy static-bgp
+ !
+ address-family ipv6 unicast
+  redistribute connected route-policy v6-connected-bgp
+  redistribute static route-policy v6-static-bgp
+  allocate-label all
+ !
+ neighbor-group pop
+  use neighbor-group as174
+  address-family ipv4 unicast
+   route-policy pop-out out
+  !
+ !
+ neighbor-group as174
+  remote-as 174
+  password encrypted 0225547C58283B
+  update-source Loopback0
+  address-family ipv4 unicast
+   maximum-prefix 4294967295 75
+  !
+ !
+ neighbor-group rr-pop
+  use neighbor-group pop
+  address-family ipv4 unicast
+   route-reflector-client
+  !
+ !
+ neighbor-group internal
+  use neighbor-group as174
+  address-family ipv4 unicast
+   route-policy internal-in in
+   route-policy internal-out out
+  !
+ !
+ neighbor-group v6-rr-peer
+  remote-as 174
+  password encrypted 0225547C58283B
+  update-source Loopback1
+  address-family ipv6 labeled-unicast
+   route-policy v6-rr-out out
+  !
+ !
+ neighbor-group partial-pop
+  use neighbor-group as174
+  address-family ipv4 unicast
+   route-reflector-client
+   route-policy partial-pop-out out
+   default-originate
+  !
+ !
+ neighbor-group rr-internal
+  use neighbor-group internal
+  address-family ipv4 unicast
+   route-reflector-client
+  !
+ !
+ neighbor-group private-peer
+  address-family ipv4 unicast
+   route-policy peer-in in
+   maximum-prefix 20000 75
+   route-policy peer-out out
+  !
+ !
+ neighbor-group blackhole-peer
+  remote-as 174
+  password encrypted 03270B2C552115
+  update-source Loopback0
+  address-family ipv4 unicast
+   route-policy blackhole-in in
+   route-policy deny-all out
+  !
+ !
+ neighbor-group v6-private-peer
+  address-family ipv6 unicast
+   route-policy v6-peer-in in
+   maximum-prefix 2000 75
+   route-policy v6-peer-out out
+  !
+ !
+ neighbor 66.28.3.252
+  remote-as 174
+  update-source Loopback0
+  address-family ipv4 unicast
+   route-policy deny-all in
+  !
+ !
+ neighbor 154.54.20.1
+  use neighbor-group v6-rr-peer
+ !
+ neighbor 154.54.20.172
+  use neighbor-group v6-rr-peer
+ !
+ neighbor 154.54.66.40
+  use neighbor-group internal
+ !
+ neighbor 154.54.66.41
+  use neighbor-group internal
+ !
+!
+l2vpn
+ pw-class mpls
+  encapsulation mpls
+  !
+ !
+!
+mpls oam
+!
+rsvp
+ interface TenGigE0/0/0/0
+  bandwidth 8000000 8000000
+ !
+ interface TenGigE0/0/0/1
+  bandwidth 8000000 8000000
+ !
+!
+mpls traffic-eng
+ interface TenGigE0/0/0/0
+ !
+ interface TenGigE0/0/0/1
+ !
+!
+mpls ldp
+ router-id 154.54.20.115
+ discovery targeted-hello accept
+ label
+  advertise
+   disable
+   for 154.54.20.115
+   interface TenGigE0/0/0/0
+   interface TenGigE0/0/0/1
+  !
+ !
+!
+ssh server v2
+ssh timeout 60
+ssh server session-limit 10
+xml agent tty
+!
+netconf agent tty
+!
+end
+
