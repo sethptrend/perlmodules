@@ -90,7 +90,7 @@ sub Connect {
         $dbpass = $self->{dbpassro};
     }
     my $keyword = $self->{dbtype} eq 'mysql' ? 'host': 'server';
-    my $dbspec="DBI:$self->{dbtype}:database=$self->{dbname};$keyword=$self->{dbhost};";
+    my $dbspec="DBI:$self->{dbtype};database=$self->{dbname};$keyword=$self->{dbhost};";
     $self->{dbh}=DBI->connect($dbspec, $dbusr, $dbpass,{ PrintError=>0 });
 
     if ($self->{dbh}) {
